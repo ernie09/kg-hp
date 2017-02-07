@@ -7,6 +7,9 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
+.img-circle {
+  background-color: white;
+}
 p {
   font-size: 20px;
 }
@@ -622,4 +625,20 @@ fieldset[disabled] .btn-success.active {
   #no-more-tables td:before {
     content: attr(data-title);
   }
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
 }
