@@ -1,5 +1,3 @@
-// Freelancer Theme JavaScript
-
 (function($) {
     "use strict"; // Start of use strict
 
@@ -19,7 +17,7 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-collapse ul li a').click(function(){
             $('.navbar-toggle:visible').click();
     });
 
@@ -29,6 +27,11 @@
             top: 100
         }
     })
+
+    // Carousel
+    $('#myCarousel').carousel({
+  		interval: 40
+  	});
 
     // Floating label headings for the contact form
     $(function() {
