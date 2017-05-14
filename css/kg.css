@@ -149,9 +149,6 @@ header {
   text-align: center;
   background: #C41C24;
   color: white;
-  background-image: url(../img/kg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 header .container {
   padding-top: 100px;
@@ -177,9 +174,6 @@ header .intro-text .skills {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-  header .carousel .carousel {
-    height: 70%;
-  }
   header .intro-text .name {
     font-size: 4.75em;
   }
@@ -199,7 +193,7 @@ header .intro-text .skills {
   top: 40%;
 }
 .carousel-caption {
-  top: 15%;
+  top: 5%;
   text-align: left;
   height: auto;
 }
@@ -207,10 +201,18 @@ header .intro-text .skills {
   line-height: 160%;
 }
 .carousel-caption h2 span {
-  background: #428BCA;
+  background: #C41C24;
   padding: 10px 20px;
   color: #fff;
   border-left: 3px solid #fff;
+}
+.carousel .carousel {
+  height: 70%;
+}
+@media (max-width: 767px) {
+  .carousel-caption {
+    display: none;
+  }
 }
 .navbar-custom {
   background: rgba(255, 255, 255, 0.95);
@@ -230,6 +232,15 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:hover {
   color: #C41C24;
+}
+.navbar-custom .navbar-brand img {
+  width: 20%;
+  /* you can use % */
+  height: auto;
+  margin-top: -15px !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -280,8 +291,26 @@ header .intro-text .skills {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .navbar-custom .navbar-brand img {
+    width: 66%;
+    /* you can use % */
+    height: auto;
+    margin-top: -25px !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
   .navbar-custom.affix {
     padding: 10px 0;
+  }
+  .navbar-custom.affix img {
+    width: 27%;
+    /* you can use % */
+    height: auto;
+    margin-top: -25px !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;

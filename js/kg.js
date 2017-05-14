@@ -30,7 +30,7 @@
 
     // Carousel
     $('#myCarousel').carousel({
-  		interval: 40
+  		interval: 60000
   	});
 
     // Floating label headings for the contact form

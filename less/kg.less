@@ -175,9 +175,6 @@ header {
 	text-align: center;
 	background: @theme-success;
 	color: white;
-	background-image: url(../img/kg.png);
-	background-repeat: no-repeat;
-	background-position: center center;
 
 	.container {
 		padding-top: 100px;
@@ -212,10 +209,6 @@ header {
 			padding-bottom: 100px;
 		}
 
-		.carousel .carousel {
-				height: 70%;
-		}
-
 		.intro-text {
 			.name {
 				font-size: 4.75em;
@@ -239,18 +232,27 @@ header {
 	top:40%
 }
 .carousel-caption {
-	top:15%;
-	text-align:left;
-  	height:auto;
+	top: 5%;
+	text-align: left;
+  height: auto;
 }
 .carousel-caption h2 {
-	line-height:160%
+	line-height: 160%
 }
 .carousel-caption h2 span {
-	background:#428BCA;
-	padding:10px 20px;
-	color:#fff;
+	background: @theme-success;
+	padding: 10px 20px;
+	color: #fff;
 	border-left:3px solid #fff;
+}
+.carousel .carousel {
+		height: 70%;
+}
+
+@media(max-width:767px) {
+	.carousel-caption {
+		display: none;
+	}
 }
 
 .navbar-custom {
@@ -272,6 +274,15 @@ header {
 		&:focus,
 		&:hover {
 			color: @theme-success;
+		}
+
+		img {
+			width: 20%; /* you can use % */
+			height: auto;
+			margin-top: -15px !important;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
 		}
 	}
 
@@ -335,11 +346,29 @@ header {
 			-webkit-transition: all 0.3s;
 			-moz-transition: all 0.3s;
 			transition: all 0.3s;
+
+			img {
+				width: 66%; /* you can use % */
+				height: auto;
+				margin-top: -25px !important;
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				transition: all 0.3s;
+			}
 		}
 	}
 
 	.navbar-custom.affix {
 		padding: 10px 0;
+
+		img {
+			width: 27%; /* you can use % */
+			height: auto;
+			margin-top: -25px !important;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}
 
 		.navbar-brand {
 			font-size: 1.5em;
