@@ -695,7 +695,7 @@ fieldset[disabled] .btn-success.active {
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 1px solid rgba(196, 28, 36, 0.25);
 }
 .team-member h4 {
   margin-top: 25px;
