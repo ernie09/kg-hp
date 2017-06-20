@@ -60,7 +60,7 @@
   background-color: #C41C24;
   color: white;
   border-radius: 100%;
-  border: 5px solid #999;
+  border: 5px solid #bbb;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -185,6 +185,10 @@ p {
 }
 p.small {
   font-size: 16px;
+}
+.abstand-img {
+  margin: 15px;
+  border: 1px solid rgba(196, 28, 36, 0.25);
 }
 a,
 a.active,
@@ -445,7 +449,7 @@ header .intro-text .skills {
   color: white;
   border-color: #C41C24;
 }
-@media (min-width: 768px) {
+@media (min-width: 1060px) {
   .navbar-custom {
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
@@ -545,7 +549,7 @@ section.success {
 #portfolio * {
   z-index: 2;
 }
-@media (min-width: 767px) {
+@media (min-width: 1060px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
@@ -809,7 +813,7 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1060px) {
   /* Force table to not be like tables anymore */
   #no-more-tables table,
   #no-more-tables tbody,
