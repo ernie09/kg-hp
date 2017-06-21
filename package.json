@@ -1,18 +1,22 @@
 {
   "name": "kgmirhalepool",
   "title": "KGMirHalePoolHp",
-  "version": "0.9",
+  "version": "1.0.9",
   "homepage": "http://www.mir-hale-pool.de/",
   "author": "Andre Henn",
   "license": {
     "type": "MIT"
+  },
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.18.8",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.4",
+    "gulp-clean-css": "^3.2.0",
     "gulp-header": "^1.8.7",
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",

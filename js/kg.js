@@ -1,5 +1,3 @@
-// Freelancer Theme JavaScript
-
 (function($) {
     "use strict"; // Start of use strict
 
@@ -18,17 +16,35 @@
         offset: 51
     });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
-    });
-
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
             top: 100
         }
     })
+
+    $('#prinzenCarousel').carousel({
+        interval: undefined
+    })
+    $('.fdi-Carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        }
+        else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+
+    // Carousel
+    $('#myCarousel').carousel({
+  		interval: 60000
+  	});
 
     // Floating label headings for the contact form
     $(function() {
