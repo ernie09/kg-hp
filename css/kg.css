@@ -68,6 +68,10 @@
   margin-top: 12px;
   line-height: 14px;
 }
+.timeline > li .fa {
+  font-size: 50px;
+  margin-top: 30%;
+}
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   text-align: left;
@@ -379,6 +383,25 @@ header .intro-text .skills {
 }
 .carousel .carousel {
   height: 70%;
+}
+.carousel-control {
+  background-color: red;
+}
+.carousel-inner.onebyone-carosel {
+  margin: auto;
+  width: 90%;
+}
+.onebyone-carosel .active.left {
+  left: -33.33%;
+}
+.onebyone-carosel .active.right {
+  left: 33.33%;
+}
+.onebyone-carosel .next {
+  left: 33.33%;
+}
+.onebyone-carosel .prev {
+  left: -33.33%;
 }
 @media (max-width: 767px) {
   .carousel-caption {
