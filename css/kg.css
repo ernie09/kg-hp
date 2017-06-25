@@ -360,15 +360,10 @@ header .intro-text .skills {
 .carousel-control.right {
   background-image: none !important;
   opacity: 1;
-}
-.carousel-control.left {
-  top: 40%;
-}
-.carousel-control.right {
-  top: 40%;
+  top: 50%;
 }
 .carousel-caption {
-  top: 5%;
+  top: 50%;
   text-align: left;
   height: auto;
 }
