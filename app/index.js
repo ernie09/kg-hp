@@ -1,5 +1,5 @@
-import './less/kg.less';
 import 'bootstrap/less/bootstrap.less';
+import './less/kg.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

@@ -1,7 +1,7 @@
 import React from 'react';
 //import { connect } from 'react-redux';
 
-import NavBar from './components/NavBar.jsx';
+import Main from './components/Main.jsx';
 
 import PropTypes from 'prop-types';
 
@@ -17,7 +17,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <NavBar/>
+      <Main/>
     );
   }
 }
