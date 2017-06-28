@@ -3,7 +3,7 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 //import PropTypes from 'prop-types';
 
-class Main extends Component {
+class Kontakt extends Component {
 
   constructor() {
     super();
@@ -14,15 +14,15 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'KG "Mir hale Pool" Verscheid'}/>
+        <Header titleText={'Kontakt'}/>
         <Footer/>
       </div>
     );
   }
 }
 
-Main.propTypes = {
+Kontakt.propTypes = {
 
 };
 
-export default Main;
+export default Kontakt;

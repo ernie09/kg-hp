@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
-import Footer from './Footer.jsx';
 //import PropTypes from 'prop-types';
 
-class Main extends Component {
+class Kappensitzung extends Component {
 
   constructor() {
     super();
@@ -14,15 +13,14 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'KG "Mir hale Pool" Verscheid'}/>
-        <Footer/>
+        <Header titleText={'Kappensitzung'}/>
       </div>
     );
   }
 }
 
-Main.propTypes = {
+Kappensitzung.propTypes = {
 
 };
 
-export default Main;
+export default Kappensitzung;

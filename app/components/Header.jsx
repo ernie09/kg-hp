@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class Header extends React.Component {
+class Header extends Component {
 
   constructor() {
     super();
 
     this.state = {};
   }
+
+  // <span className="skills">3x Hüh&apos;Scheldche Alaaf!</span>
+  // <hr className="star-light"/>
+  // <p>Die KG &quot;Mir hale Pool&quot; Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
 
   // target="_blank"
   render() {
@@ -17,9 +21,6 @@ class Header extends React.Component {
           <div className="col-lg-12">
             <div className="intro-text">
               <span className="name">{this.props.titleText}</span>
-              <span className="skills">3x Hüh'Scheldche Alaaf!</span>
-              <hr className="star-light"/>
-              <p>Die KG "Mir hale Pool" Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
             </div>
           </div>
         </div>
