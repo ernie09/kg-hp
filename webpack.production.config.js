@@ -11,7 +11,7 @@ prodConfig.plugins.push(
     }
   }),
   new CopyWebpackPlugin([{
-    from: 'src/index.html'
+    from: 'app/index.html'
   }])
 );
 

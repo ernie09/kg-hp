@@ -1,6 +1,7 @@
 import React from 'react';
 
-//import PropTypes from 'prop-types';
+import $ from  'jquery';
+import 'bootstrap/dist/js/bootstrap';
 
 import Main from './components/Main.jsx';
 import Kontakt from './components/Kontakt.jsx';
@@ -20,7 +21,50 @@ class App extends React.Component {
     this.state = {};
   }
 
-  // target="_blank"
+  componentDidMount() {
+    // Move to top
+    $('.page-scroll a').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      }, 1250, 'easeInOutExpo');
+      event.preventDefault();
+    });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+      target: '.navbar-fixed-top',
+      offset: 51
+    });
+
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+      offset: {
+        top: 100
+      }
+    });
+
+    // $('#prinzenCarousel').carousel({
+    //   interval: undefined
+    // });
+    //
+    // // Carousel
+    // $('#myCarousel').carousel({
+    //   interval: 60000
+    // });
+    //
+    // // Floating label headings for the contact form
+    // $(function() {
+    //     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+    //         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+    //     }).on("focus", ".floating-label-form-group", function() {
+    //         $(this).addClass("floating-label-form-group-with-focus");
+    //     }).on("blur", ".floating-label-form-group", function() {
+    //         $(this).removeClass("floating-label-form-group-with-focus");
+    //     });
+    // });
+  }
+
   render() {
     return (
       <div>
@@ -55,25 +99,25 @@ class App extends React.Component {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a href="kg.html">Die roten Jacken</a>
+                      <a href="/kg">Die roten Jacken</a>
                     </li>
                     <li role="separator" className="divider"></li>
                     <li>
-                      <a href="prinzengarde.html">Prinzengarde</a>
+                      <a href="/prinzengarde">Prinzengarde</a>
                     </li>
                     <li>
-                      <a href="jugendgarde.html">Jungfunken</a>
+                      <a href="/jugendgarde">Jungfunken</a>
                     </li>
                     <li>
-                      <a href="kleinefunken.html">Kleine Funken</a>
-                    </li>
-                    <li role="separator" className="divider"></li>
-                    <li>
-                      <a href="prinzenpaare.html">Prinzenpaare</a>
+                      <a href="/kleinefunken">Kleine Funken</a>
                     </li>
                     <li role="separator" className="divider"></li>
                     <li>
-                      <a href="vorstand.html">Vorstand</a>
+                      <a href="/prinzenpaare">Prinzenpaare</a>
+                    </li>
+                    <li role="separator" className="divider"></li>
+                    <li>
+                      <a href="/vorstand">Vorstand</a>
                     </li>
                     <li role="separator" className="divider"></li>
                     <li>

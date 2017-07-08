@@ -3,3 +3,5 @@ node_modules
 .directory
 *.zip
 */img/**
+
+build/
