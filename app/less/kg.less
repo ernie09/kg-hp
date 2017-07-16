@@ -93,6 +93,84 @@ hr.star-primary:after {
 	color: @theme-primary;
 }
 
+hr.news-light,
+hr.news-primary {
+	padding: 0;
+	border: none;
+	border-top: solid 5px;
+	text-align: center;
+	max-width: 250px;
+	margin: 25px auto 30px;
+}
+
+hr.news-light:after,
+hr.news-primary:after {
+	content: "\f1ea";
+	font-family: FontAwesome;
+	display: inline-block;
+	position: relative;
+	top: -0.8em;
+	font-size: 2em;
+	padding: 0 0.25em;
+}
+
+hr.news-light {
+	border-color: white;
+}
+
+hr.news-light:after {
+	background-color: @theme-success;
+	color: white;
+}
+
+hr.news-primary {
+	border-color: @theme-primary;
+}
+
+hr.news-primary:after {
+	background-color: white;
+	color: @theme-primary;
+}
+
+hr.clock-light,
+hr.clock-primary {
+	padding: 0;
+	border: none;
+	border-top: solid 5px;
+	text-align: center;
+	max-width: 250px;
+	margin: 25px auto 30px;
+}
+
+hr.clock-light:after,
+hr.clock-primary:after {
+	content: "\f017";
+	font-family: FontAwesome;
+	display: inline-block;
+	position: relative;
+	top: -0.8em;
+	font-size: 2em;
+	padding: 0 0.25em;
+}
+
+hr.clock-light {
+	border-color: white;
+}
+
+hr.clock-light:after {
+	background-color: @theme-success;
+	color: white;
+}
+
+hr.clock-primary {
+	border-color: @theme-primary;
+}
+
+hr.clock-primary:after {
+	background-color: white;
+	color: @theme-primary;
+}
+
 hr.image-light,
 hr.image-primary {
 	padding: 0;

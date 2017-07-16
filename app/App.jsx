@@ -10,6 +10,13 @@ import News from './components/News.jsx';
 import Historie from './components/Historie.jsx';
 import Termine from './components/Termine.jsx';
 import Kappensitzung from './components/Kappensitzung.jsx';
+import Kg from './components/Kg.jsx';
+import Prinzengarde from './components/Prinzengarde.jsx';
+import Jugendgarde from './components/Jugendgarde.jsx';
+import KleineFunken from './components/KleineFunken.jsx';
+import Prinzenpaare from './components/Prinzenpaare.jsx';
+import Vorstand from './components/Vorstand.jsx';
+import Sponsoren from './components/Sponsoren.jsx';
 
 import { Route, Switch, Link} from 'react-router-dom';
 
@@ -121,7 +128,11 @@ class App extends React.Component {
                     </li>
                     <li role="separator" className="divider"></li>
                     <li>
-                      <Link to="/historie">Historie</Link>
+                      <Link to="/history">Historie</Link>
+                    </li>
+                    <li role="separator" className="divider"></li>
+                    <li>
+                      <Link to="/sponsoren">Sponsoren</Link>
                     </li>
                   </ul>
                 </li>
@@ -141,12 +152,19 @@ class App extends React.Component {
         <div className="container-fluid">
           <Switch>
             <Route exact path="/" component={Main} />
-            <Route exact path="/contact" component={Kontakt} />
             <Route exact path="/news" component={News} />
-            <Route exact path="/history" component={Historie} />
-            <Route exact path="/impressum" component={Impressum} />
-            <Route exact path="/termine" component={Termine} />
             <Route exact path="/kappensitzung" component={Kappensitzung} />
+            <Route exact path="/termine" component={Termine} />
+            <Route exact path="/kg" component={Kg} />
+            <Route exact path="/prinzengarde" component={Prinzengarde} />
+            <Route exact path="/jugendgarde" component={Jugendgarde} />
+            <Route exact path="/kleinefunken" component={KleineFunken} />
+            <Route exact path="/prinzenpaare" component={Prinzenpaare} />
+            <Route exact path="/vorstand" component={Vorstand} />
+            <Route exact path="/history" component={Historie} />
+            <Route exact path="/sponsoren" component={Sponsoren} />
+            <Route exact path="/impressum" component={Impressum} />
+            <Route exact path="/contact" component={Kontakt} />
           </Switch>
         </div>
       </div>

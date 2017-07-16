@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
-//import PropTypes from 'prop-types';
 
 class Historie extends Component {
 
@@ -13,12 +12,14 @@ class Historie extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Historie'}/>
+        <Header titleText={'Historie'} hrClassName="clock-light">
+          <h2 className="text-center">Bal 90 Johr jeck....die Hüh is nit jenoch!</h2><br/>
+        </Header>
         <section id="events">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <h2 className="text-center">Bald 90 Jahre jeck.....<br/>die Hüh is nit jenoch!</h2><br/>
+                <img src="img/historie/1945.png" width="50%" alt="Test" className="img-responsive pull-right abstand-img"/>
                 <p>Im Jahre 1929 setzten sich für die damaligen Verhältnisse 11 mutige Männer zusammen einen Verein zu gründen. Sie machten sich zur Aufgabe das Geschehen von “Hüh” und “Scheldche” an den Tag zu bringen. Im denkwürdigem Jagdhaus wurde der Entschluss
                   gefasst ihn Karnevalsverein “Mir hale Pool” (wir bleiben bei der Stange) zu nennen. Der 1. Auftakt war dann am Karnevalssonntag des Jahres 1930 nach der Messe in Verscheid. Aus dem Fenster des Vereinslokals Stüber (heute Paganetti) stiegen
                   11 Männer auf eine Bohle die man auf die Eisenstange gelegt hatte, worauf man sonst die Fahrräder abstellte. Die Kirchenbesucher, staunten nicht schlecht, als sie auf dem Nachhauseweg 11 Herren in Schwarz im “Gehste-Hinter-Mich” und Zylinder
@@ -29,7 +30,6 @@ class Historie extends Component {
                   Kasse kannte man nicht und es wurde meist in Getränke investiert. Die Gründer kamen aus zu diesem Zweck auf die Idee einen “Schnorres” (Schnurbart) wachsen zu lassen. Der Sieger war der, der die meisten Haare hatte. Mit 17 Haaren gewann Willi
                   Hesseler, der Verlierer musste eine Runde zahlen.</p>
 
-                <img src="img/historie/1945.png" width="50%" alt="Test" className="img-responsive pull-right abstand-img"/>
                 <p>Im Laufe der Zeit wusste man schnell wo die einzelnen Büttenreden gedichtet wurden. Dies war natürlich im alten Jagdhaus. Die Dichter kamen aus Hollig; Gertrud Seger, Katharina Beck, Katharina Rams, Maria Küpper, Lorens Seger und aus Elsbach
                   Peter Klöckner. Aber auch weitere Büttenredner schliefen nicht und warfen ihre Reden in den berüchtigten Kummerkasten im Vereinsgasthaus, wo man bis heute noch immer nicht weiß, wer die Verfasser waren. Karnevalskostüme wurden in Waldbreitbach
                   bei dem Verleih Albert Lewi geholt.</p>

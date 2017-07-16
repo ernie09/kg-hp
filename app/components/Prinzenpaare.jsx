@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header.jsx';
 //import PropTypes from 'prop-types';
 
-class Kappensitzung extends Component {
+class Prinzenpaare extends Component {
 
   constructor() {
     super();
@@ -13,14 +13,14 @@ class Kappensitzung extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Kappensitzung'}/>
+        <Header titleText={'Prinzenpaare'}/>
       </div>
     );
   }
 }
 
-Kappensitzung.propTypes = {
+Prinzenpaare.propTypes = {
 
 };
 
-export default Kappensitzung;
+export default Prinzenpaare;

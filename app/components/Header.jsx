@@ -9,38 +9,36 @@ class Header extends Component {
     this.state = {};
   }
 
-  // <span className="skills">3x Hüh&apos;Scheldche Alaaf!</span>
-  // <hr className="star-light"/>
-  // <p>Die KG &quot;Mir hale Pool&quot; Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
-
-  // target="_blank"
   render() {
-    return <header>
+    return (<header>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="intro-text">
               <span className="name">{this.props.titleText}</span>
+              {
+                this.props.skillsText ? <span className="skills">{this.props.skillsText}</span> : undefined
+              }
+              {
+                this.props.hrClassName ? <hr className={this.props.hrClassName}/> : undefined
+              }
+              { this.props.children }
             </div>
           </div>
         </div>
       </div>
-    </header>;
+    </header>);
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return state;
-// };
-
 Header.propTypes = {
-  titleText: PropTypes.string
-  // appLanguage: PropTypes.string,
-  // feature: PropTypes.object,
-  // featureInfoActive: PropTypes.bool,
-  // mapLayers: PropTypes.array,
-  // muiTheme: PropTypes.object
+  titleText: PropTypes.string.isRequired,
+  skillsText: PropTypes.string,
+  hrClassName: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 };
 
-//export default App;
-export default Header; //connect(mapStateToProps,undefined)(App);
+export default Header;
