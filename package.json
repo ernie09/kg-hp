@@ -42,14 +42,20 @@
     "url": "https://github.com/ernie09/kg-hp.git"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.2",
     "jquery": "^3.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-event-timeline": "^1.3.2",
+    "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9"
   }

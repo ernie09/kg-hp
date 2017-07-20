@@ -20,6 +20,9 @@ import Sponsoren from './components/Sponsoren.jsx';
 
 import { Route, Switch, Link} from 'react-router-dom';
 
+import { Provider } from 'react-redux';
+import store from './store/store';
+
 class App extends React.Component {
 
   constructor() {
@@ -74,6 +77,7 @@ class App extends React.Component {
 
   render() {
     return (
+        <Provider store={store}>
       <div>
         <nav id="mainNav" className="navbar navbar-default navbar-fixed-top navbar-custom">
           <div className="container-fluid">
@@ -168,6 +172,7 @@ class App extends React.Component {
           </Switch>
         </div>
       </div>
+    </Provider>
     );
   }
 }

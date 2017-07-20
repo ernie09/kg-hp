@@ -1,556 +1,557 @@
 {
   "1949": {
-    "Name": "Neumann",
-    "Mann": "Franz",
-    "AnzahlMann": 1,
-    "Frau": "Michen",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Neumann",
+    "nameMan": "Franz",
+    "numMan": 1,
+    "woman": "Michen",
+    "numWoman": 1,
+    "picture": ""
   },
   "1950": {
-    "Name": "Grüber",
-    "Mann": "Willi",
-    "AnzahlMann": 1,
-    "Frau": "Gisela",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Grüber",
+    "nameMan": "Willi",
+    "numMan": 1,
+    "woman": "Gisela",
+    "numWoman": 1,
+    "picture": ""
   },
   "1951": {
-    "Name": "Grüber",
-    "Mann": "Johannes",
-    "AnzahlMann": 1,
-    "Frau": "Anni",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Grüber",
+    "nameMan": "Johannes",
+    "numMan": 1,
+    "woman": "Anni",
+    "numWoman": 1,
+    "picture": ""
   },
   "1952": {
-    "Name": "Böcking",
-    "Mann": "Adolf",
-    "AnzahlMann": 1,
-    "Frau": "Änni",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Böcking",
+    "nameMan": "Adolf",
+    "numMan": 1,
+    "woman": "Änni",
+    "numWoman": 1,
+    "picture": ""
   },
   "1953": {
-    "Name": "Paganetti",
-    "Mann": "Ferdinand",
-    "AnzahlMann": 1,
-    "Frau": "Elisabeth",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Paganetti",
+    "nameMan": "Ferdinand",
+    "numMan": 1,
+    "woman": "Elisabeth",
+    "numWoman": 1,
+    "picture": ""
   },
   "1954": {
-    "Name": "Paganetti",
-    "Mann": "Werner",
-    "AnzahlMann": 1,
-    "Frau": "Änni",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Paganetti",
+    "nameMan": "Werner",
+    "numMan": 1,
+    "woman": "Änni",
+    "numWoman": 2,
+    "picture": ""
   },
   "1955": {
-    "Name": "Roth",
-    "Mann": "Willi",
-    "AnzahlMann": 2,
-    "Frau": "Änne",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Roth",
+    "nameMan": "Willi",
+    "numMan": 2,
+    "woman": "Änne",
+    "numWoman": 1,
+    "picture": ""
   },
   "1956": {
-    "Name": "Flesch",
-    "Mann": "Willi",
-    "AnzahlMann": 3,
-    "Frau": "Trude",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Flesch",
+    "nameMan": "Willi",
+    "numMan": 3,
+    "woman": "Trude",
+    "numWoman": 1,
+    "picture": ""
   },
   "1957": {
-    "Name": "Oswald",
-    "Mann": "Robert",
-    "AnzahlMann": 1,
-    "Frau": "Agnes",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Oswald",
+    "nameMan": "Robert",
+    "numMan": 1,
+    "woman": "Agnes",
+    "numWoman": 1,
+    "picture": ""
   },
   "1958": {
-    "Name": "Nassen",
-    "Mann": "Franz",
-    "AnzahlMann": 2,
-    "Frau": "Adelheid",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Nassen",
+    "nameMan": "Franz",
+    "numMan": 2,
+    "woman": "Adelheid",
+    "numWoman": 1,
+    "picture": ""
   },
   "1959": {
-    "Name": "Linsler",
-    "Mann": "Hans",
-    "AnzahlMann": 1,
-    "Frau": "Anna",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Linsler",
+    "nameMan": "Hans",
+    "numMan": 1,
+    "woman": "Anna",
+    "numWoman": 1,
+    "picture": ""
   },
   "1960": {
-    "Name": "Krsyzewski",
-    "Mann": "Heinz",
-    "AnzahlMann": 1,
-    "Frau": "Änni",
-    "AnzahlFrau": 3,
-    "Bild": ""
+    "name": "Krsyzewski",
+    "nameMan": "Heinz",
+    "numMan": 1,
+    "woman": "Änni",
+    "numWoman": 3,
+    "picture": ""
   },
   "1961": {
-    "Name": "Paganetti",
-    "Mann": "Josef",
-    "AnzahlMann": 1,
-    "Frau": "Maria",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Paganetti",
+    "nameMan": "Josef",
+    "numMan": 1,
+    "woman": "Maria",
+    "numWoman": 1,
+    "picture": ""
   },
   "1962": {
-    "Name": "Krumscheid",
-    "Mann": "Wilfried",
-    "AnzahlMann": 1,
-    "Frau": "Anneliese",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Krumscheid",
+    "nameMan": "Wilfried",
+    "numMan": 1,
+    "woman": "Anneliese",
+    "numWoman": 1,
+    "picture": ""
   },
   "1963": {
-    "Name": "Brücken",
-    "Mann": "Franz-Josef",
-    "AnzahlMann": 1,
-    "Frau": "Irmgard",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Brücken",
+    "nameMan": "Franz-Josef",
+    "numMan": 1,
+    "woman": "Irmgard",
+    "numWoman": 1,
+    "picture": ""
   },
   "1964": {
-    "Name": "Grüber",
-    "Mann": "Fritz",
-    "AnzahlMann": 1,
-    "Frau": "Hannelore",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Grüber",
+    "nameMan": "Fritz",
+    "numMan": 1,
+    "woman": "Hannelore",
+    "numWoman": 1,
+    "picture": ""
   },
   "1965": {
-    "Name": "Holl",
-    "Mann": "Hans",
-    "AnzahlMann": 2,
-    "Frau": "Gertrud",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Holl",
+    "nameMan": "Hans",
+    "numMan": 2,
+    "woman": "Gertrud",
+    "numWoman": 1,
+    "picture": ""
   },
   "1966": {
-    "Name": "Kramer",
-    "Mann": "Franz",
-    "AnzahlMann": 3,
-    "Frau": "Josefine",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Kramer",
+    "nameMan": "Franz",
+    "numMan": 3,
+    "woman": "Josefine",
+    "numWoman": 1,
+    "picture": ""
   },
   "1967": {
-    "Name": "Brücken",
-    "Mann": "Willi",
-    "AnzahlMann": 4,
-    "Frau": "Mechtild",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Brücken",
+    "nameMan": "Willi",
+    "numMan": 4,
+    "woman": "Mechtild",
+    "numWoman": 1,
+    "picture": ""
   },
   "1968": {
-    "Name": "Müller",
-    "Mann": "Josef",
-    "AnzahlMann": 2,
-    "Frau": "Wilma",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Müller",
+    "nameMan": "Josef",
+    "numMan": 2,
+    "woman": "Wilma",
+    "numWoman": 1,
+    "picture": ""
   },
   "1969": {
-    "Name": "Reuschenbach",
-    "Mann": "Josef",
-    "AnzahlMann": 3,
-    "Frau": "Anni",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Reuschenbach",
+    "nameMan": "Josef",
+    "numMan": 3,
+    "woman": "Anni",
+    "numWoman": 2,
+    "picture": ""
   },
   "1970": {
-    "Name": "Stüber",
-    "Mann": "Heinz",
-    "AnzahlMann": 2,
-    "Frau": "Irmgard",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Stüber",
+    "nameMan": "Heinz",
+    "numMan": 2,
+    "woman": "Irmgard",
+    "numWoman": 2,
+    "picture": ""
   },
   "1971": {
-    "Name": "Ortmeyer",
-    "Mann": "Paul",
-    "AnzahlMann": 1,
-    "Frau": "Karin",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Ortmeyer",
+    "nameMan": "Paul",
+    "numMan": 1,
+    "woman": "Karin",
+    "numWoman": 1,
+    "picture": ""
   },
   "1972": {
-    "Name": "Flesch",
-    "Mann": "Josef",
-    "AnzahlMann": 4,
-    "Frau": "Anneliese",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Flesch",
+    "nameMan": "Josef",
+    "numMan": 4,
+    "woman": "Anneliese",
+    "numWoman": 2,
+    "picture": ""
   },
   "1973": {
-    "Name": "Wagner",
-    "Mann": "Josef",
-    "AnzahlMann": 5,
-    "Frau": "Doris",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Wagner",
+    "nameMan": "Josef",
+    "numMan": 5,
+    "woman": "Doris",
+    "numWoman": 1,
+    "picture": ""
   },
   "1974": {
-    "Name": "Effert",
-    "Mann": "Hans-Josef",
-    "AnzahlMann": 1,
-    "Frau": "Alwine",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Effert",
+    "nameMan": "Hans-Josef",
+    "numMan": 1,
+    "woman": "Alwine",
+    "numWoman": 1,
+    "picture": ""
   },
   "1975": {
-    "Name": "Hessler",
-    "Mann": "Heiner",
-    "AnzahlMann": 1,
-    "Frau": "Rita",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Hessler",
+    "nameMan": "Heiner",
+    "numMan": 1,
+    "woman": "Rita",
+    "numWoman": 1,
+    "picture": ""
   },
   "1976": {
-    "Name": "Krebs",
-    "Mann": "Alfred",
-    "AnzahlMann": 1,
-    "Frau": "Carola",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Krebs",
+    "nameMan": "Alfred",
+    "numMan": 1,
+    "woman": "Carola",
+    "numWoman": 1,
+    "picture": ""
   },
   "1977": {
-    "Name": "Paganetti",
-    "Mann": "Werner",
-    "AnzahlMann": 1,
-    "Frau": "Gertrud",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Paganetti",
+    "nameMan": "Werner",
+    "numMan": 1,
+    "woman": "Gertrud",
+    "numWoman": 2,
+    "picture": ""
   },
   "1978": {
-    "Name": "Müller",
-    "Mann": "Heinz",
-    "AnzahlMann": 3,
-    "Frau": "Anna",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Müller",
+    "nameMan": "Heinz",
+    "numMan": 3,
+    "woman": "Anna",
+    "numWoman": 2,
+    "picture": ""
   },
   "1979": {
-    "Name": "Siebenmorgen",
-    "Mann": "Toni",
-    "AnzahlMann": 1,
-    "Frau": "Anna",
-    "AnzahlFrau": 3,
-    "Bild": ""
+    "name": "Siebenmorgen",
+    "nameMan": "Toni",
+    "numMan": 1,
+    "woman": "Anna",
+    "numWoman": 3,
+    "picture": ""
   },
   "1980": {
-    "Name": "Müller",
-    "Mann": "Eduard",
-    "AnzahlMann": 1,
-    "Frau": "Hildegard",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Müller",
+    "nameMan": "Eduard",
+    "numMan": 1,
+    "woman": "Hildegard",
+    "numWoman": 1,
+    "picture": ""
   },
   "1981": {
-    "Name": "Stüber",
-    "Mann": "Josef",
-    "AnzahlMann": 6,
-    "Frau": "Renate",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Stüber",
+    "nameMan": "Josef",
+    "numMan": 6,
+    "woman": "Renate",
+    "numWoman": 1,
+    "picture": ""
   },
   "1982": {
-    "Name": "Müller",
-    "Mann": "Karl-Heinz",
-    "AnzahlMann": 1,
-    "Frau": "Ute",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Müller",
+    "nameMan": "Karl-Heinz",
+    "numMan": 1,
+    "woman": "Ute",
+    "numWoman": 1,
+    "picture": ""
   },
   "1983": {
-    "Name": "Prangenberg/Koch",
-    "Mann": "Günter",
-    "AnzahlMann": 1,
-    "Frau": "Marianne",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Prangenberg/Koch",
+    "nameMan": "Günter",
+    "numMan": 1,
+    "woman": "Marianne",
+    "numWoman": 1,
+    "picture": ""
   },
   "1984": {
-    "Name": "Buhr",
-    "Mann": "Wilfried",
-    "AnzahlMann": 2,
-    "Frau": "Roswitha",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Buhr",
+    "nameMan": "Wilfried",
+    "numMan": 2,
+    "woman": "Roswitha",
+    "numWoman": 1,
+    "picture": ""
   },
   "1985": {
-    "Name": "Boden",
-    "Mann": "Kurt",
-    "AnzahlMann": 1,
-    "Frau": "Rita",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Boden",
+    "nameMan": "Kurt",
+    "numMan": 1,
+    "woman": "Rita",
+    "numWoman": 2,
+    "picture": ""
   },
   "1986": {
-    "Name": "Wolf",
-    "Mann": "Hubert",
-    "AnzahlMann": 1,
-    "Frau": "Ulrike",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Wolf",
+    "nameMan": "Hubert",
+    "numMan": 1,
+    "woman": "Ulrike",
+    "numWoman": 1,
+    "picture": ""
   },
   "1987": {
-    "Name": "Buhr",
-    "Mann": "Manfred",
-    "AnzahlMann": 1,
-    "Frau": "Monika",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Buhr",
+    "nameMan": "Manfred",
+    "numMan": 1,
+    "woman": "Monika",
+    "numWoman": 1,
+    "picture": ""
   },
   "1988": {
-    "Name": "Krebs",
-    "Mann": "Peter",
-    "AnzahlMann": 1,
-    "Frau": "Marlene",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Krebs",
+    "nameMan": "Peter",
+    "numMan": 1,
+    "woman": "Marlene",
+    "numWoman": 1,
+    "picture": ""
   },
   "1989": {
-    "Name": "Mandt",
-    "Mann": "Harald",
-    "AnzahlMann": 1,
-    "Frau": "Elisabeth",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Mandt",
+    "nameMan": "Harald",
+    "numMan": 1,
+    "woman": "Elisabeth",
+    "numWoman": 2,
+    "picture": ""
   },
   "1990": {
-    "Name": "Rams",
-    "Mann": "Klaus",
-    "AnzahlMann": 1,
-    "Frau": "Rita",
-    "AnzahlFrau": 3,
-    "Bild": ""
+    "name": "Rams",
+    "nameMan": "Klaus",
+    "numMan": 1,
+    "woman": "Rita",
+    "numWoman": 3,
+    "picture": ""
   },
   "1991": {
-    "Name": "Wittlich",
-    "Mann": "Fred",
-    "AnzahlMann": 1,
-    "Frau": "Elke",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Wittlich",
+    "nameMan": "Fred",
+    "numMan": 1,
+    "woman": "Elke",
+    "numWoman": 1,
+    "picture": ""
   },
   "1992": {
-    "Name": "Wittlich",
-    "Mann": "Fred",
-    "AnzahlMann": 1,
-    "Frau": "Elke",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Wittlich",
+    "nameMan": "Fred",
+    "numMan": 1,
+    "woman": "Elke",
+    "numWoman": 1,
+    "picture": ""
   },
   "1993": {
-    "Name": "Risse",
-    "Mann": "Bertram",
-    "AnzahlMann": 1,
-    "Frau": "Vera",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Risse",
+    "nameMan": "Bertram",
+    "numMan": 1,
+    "woman": "Vera",
+    "numWoman": 1,
+    "picture": ""
   },
   "1994": {
-    "Name": "Oehl",
-    "Mann": "Alfons",
-    "AnzahlMann": 1,
-    "Frau": "Regina",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Oehl",
+    "nameMan": "Alfons",
+    "numMan": 1,
+    "woman": "Regina",
+    "numWoman": 1,
+    "picture": ""
   },
   "1995": {
-    "Name": "Clever",
-    "Mann": "Manfred",
-    "AnzahlMann": 2,
-    "Frau": "Christel",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Clever",
+    "nameMan": "Manfred",
+    "numMan": 2,
+    "woman": "Christel",
+    "numWoman": 1,
+    "picture": ""
   },
   "1996": {
-    "Name": "Rüth",
-    "Mann": "Wolfgang",
-    "AnzahlMann": 1,
-    "Frau": "Claudia",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Rüth",
+    "nameMan": "Wolfgang",
+    "numMan": 1,
+    "woman": "Claudia",
+    "numWoman": 1,
+    "picture": ""
   },
   "1997": {
-    "Name": "Giritsch",
-    "Mann": "Albert",
-    "AnzahlMann": 1,
-    "Frau": "Ute",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Giritsch",
+    "nameMan": "Albert",
+    "numMan": 1,
+    "woman": "Ute",
+    "numWoman": 2,
+    "picture": ""
   },
   "1998": {
-    "Name": "Engel",
-    "Mann": "Erich",
-    "AnzahlMann": 1,
-    "Frau": "Ulla",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Engel",
+    "nameMan": "Erich",
+    "numMan": 1,
+    "woman": "Ulla",
+    "numWoman": 1,
+    "picture": ""
   },
   "1999": {
-    "Name": "Lehnert",
-    "Mann": "Klaus",
-    "AnzahlMann": 2,
-    "Frau": "Irmtraut",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Lehnert",
+    "nameMan": "Klaus",
+    "numMan": 2,
+    "woman": "Irmtraut",
+    "numWoman": 1,
+    "picture": ""
   },
   "2000": {
-    "Name": "Pütz",
-    "Mann": "Willi",
-    "AnzahlMann": 5,
-    "Frau": "Andrea",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Pütz",
+    "nameMan": "Willi",
+    "numMan": 5,
+    "woman": "Andrea",
+    "numWoman": 1,
+    "picture": ""
   },
   "2001": {
-    "Name": "Roussel",
-    "Mann": "Patrick",
-    "AnzahlMann": 1,
-    "Frau": "Inge",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Roussel",
+    "nameMan": "Patrick",
+    "numMan": 1,
+    "woman": "Inge",
+    "numWoman": 1,
+    "picture": ""
   },
   "2002": {
-    "Name": "Winkler",
-    "Mann": "Willi",
-    "AnzahlMann": 6,
-    "Frau": "Marina",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Winkler",
+    "nameMan": "Willi",
+    "numMan": 6,
+    "woman": "Marina",
+    "numWoman": 1,
+    "picture": ""
   },
   "2003": {
-    "Name": "Reitz",
-    "Mann": "Michael",
-    "AnzahlMann": 1,
-    "Frau": "Gaby",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Reitz",
+    "nameMan": "Michael",
+    "numMan": 1,
+    "woman": "Gaby",
+    "numWoman": 1,
+    "picture": ""
   },
   "2004": {
-    "Name": "Gottschalk",
-    "Mann": "Bernhard",
-    "AnzahlMann": 1,
-    "Frau": "Petra",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Gottschalk",
+    "nameMan": "Bernhard",
+    "numMan": 1,
+    "woman": "Petra",
+    "numWoman": 1,
+    "picture": ""
   },
   "2005": {
-    "Name": "Prangenberg",
-    "Mann": "Frank",
-    "AnzahlMann": 1,
-    "Frau": "Bettina (Betti)",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Prangenberg",
+    "nameMan": "Frank",
+    "numMan": 1,
+    "woman": "Bettina (Betti)",
+    "numWoman": 1,
+    "picture": ""
   },
   "2006": {
-    "Name": "Lenz",
-    "Mann": "Uwe",
-    "AnzahlMann": 1,
-    "Frau": "Tanja",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Lenz",
+    "nameMan": "Uwe",
+    "numMan": 1,
+    "woman": "Tanja",
+    "numWoman": 1,
+    "picture": ""
   },
   "2007": {
-    "Name": "Kreipl/Bruns",
-    "Mann": "Manfred",
-    "AnzahlMann": 3,
-    "Frau": "Christa",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Kreipl/Bruns",
+    "nameMan": "Manfred",
+    "numMan": 3,
+    "woman": "Christa",
+    "numWoman": 1,
+    "picture": ""
   },
   "2008": {
-    "Name": "Waßerburger",
-    "Mann": "Thomas",
-    "AnzahlMann": 1,
-    "Frau": "Sabrina",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Waßerburger",
+    "nameMan": "Thomas",
+    "numMan": 1,
+    "woman": "Sabrina",
+    "numWoman": 1,
+    "picture": ""
   },
   "2009": {
-    "Name": "Bröder/Walloschek",
-    "Mann": "Max (Ludwig)",
-    "AnzahlMann": 1,
-    "Frau": "Karin",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Bröder/Walloschek",
+    "nameMan": "Max (Ludwig)",
+    "numMan": 1,
+    "woman": "Karin",
+    "numWoman": 1,
+    "picture": ""
   },
   "2010": {
-    "Name": "Ewens",
-    "Mann": "(Hans-)Peter",
-    "AnzahlMann": 2,
-    "Frau": "Ulla",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Ewens",
+    "nameMan": "(Hans-)Peter",
+    "numMan": 2,
+    "woman": "Ulla",
+    "numWoman": 2,
+    "picture": ""
   },
   "2011": {
-    "Name": "Wagner",
-    "Mann": "Herbert",
-    "AnzahlMann": 1,
-    "Frau": "Claudia",
-    "AnzahlFrau": 2,
-    "Bild": ""
+    "name": "Wagner",
+    "nameMan": "Herbert",
+    "numMan": 1,
+    "woman": "Claudia",
+    "numWoman": 2,
+    "picture": ""
   },
   "2012": {
-    "Name": "Meier-Ronfeld",
-    "Mann": "Oliver",
-    "AnzahlMann": 1,
-    "Frau": "Nancy",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Meier-Ronfeld",
+    "nameMan": "Oliver",
+    "numMan": 1,
+    "woman": "Nancy",
+    "numWoman": 1,
+    "picture": ""
   },
   "2013": {
-    "Name": "Lanvers",
-    "Mann": "Andreas",
-    "AnzahlMann": 1,
-    "Frau": "Suzanna",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Lanvers",
+    "nameMan": "Andreas",
+    "numMan": 1,
+    "woman": "Suzanna",
+    "numWoman": 1,
+    "picture": ""
   },
   "2014": {
-    "Name": "Fischer",
-    "Mann": "Dirk",
-    "AnzahlMann": 1,
-    "Frau": "Jeanette",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Fischer",
+    "nameMan": "Dirk",
+    "numMan": 1,
+    "woman": "Jeanette",
+    "numWoman": 1,
+    "picture": ""
   },
   "2015": {
-    "Name": "Faust",
-    "Mann": "Andreas",
-    "AnzahlMann": 2,
-    "Frau": "Tina",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Faust",
+    "nameMan": "Andreas",
+    "numMan": 2,
+    "woman": "Tina",
+    "numWoman": 1,
+    "picture": ""
   },
   "2016": {
-    "Name": "Hardt/Voss",
-    "Mann": "Torsten",
-    "AnzahlMann": 1,
-    "Frau": "Eileen",
-    "AnzahlFrau": 1,
-    "Bild": ""
+    "name": "Hardt/Voss",
+    "nameMan": "Torsten",
+    "numMan": 1,
+    "woman": "Eileen",
+    "numWoman": 1,
+    "picture": ""
   },
   "2017": {
-    "Name": "Jost",
-    "Mann": "Tobias",
-    "AnzahlMann": 1,
-    "Frau": "Marina",
-    "AnzahlFrau": 2,
-    "Bild": "img/prinzenpaare/senior/2017.jpg",
-    "TitelMann": "von BMW bekannt,",
-    "TitelFrau": "aus dem Roßbe Land"
+    "name": "Jost",
+    "nameMan": "Tobias",
+    "numMan": 1,
+    "woman": "Marina",
+    "numWoman": 2,
+    "picture": "img/prinzenpaare/senior/2017.jpg",
+    "titleMan": "von BMW bekannt",
+    "titleWoman": "aus dem Roßbe Land",
+    "active": true
   }
 }

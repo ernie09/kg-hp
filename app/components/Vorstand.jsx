@@ -57,7 +57,6 @@ class Vorstand extends Component {
             </div>
           </div>
         </section>
-
       </div>
     );
   }
