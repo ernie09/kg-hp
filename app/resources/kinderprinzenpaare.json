@@ -1,42 +1,42 @@
 {
   "2013": {
-    "Name": "TODO",
-    "Mann": "TODO",
-    "AnzahlMann": 1,
-    "Frau": "TODO",
-    "AnzahlFrau": 1,
-    "Bild": "http://placehold.it/250x250"
+    "name": "Mustermann",
+    "nameMan": "Manfred",
+    "numMan": 1,
+    "woman": "Erika",
+    "numWoman": 1,
+    "picture": ""
   },
   "2014": {
-    "Name": "TODO",
-    "Mann": "TODO",
-    "AnzahlMann": 2,
-    "Frau": "TODO",
-    "AnzahlFrau": 2,
-    "Bild": "http://placehold.it/250x250"
+    "name": "Mustermann",
+    "nameMan": "Manfred",
+    "numMan": 1,
+    "woman": "Erika",
+    "numWoman": 1,
+    "picture": ""
   },
   "2015": {
-    "Name": "TODO",
-    "Mann": "TODO",
-    "AnzahlMann": 3,
-    "Frau": "TODO",
-    "AnzahlFrau": 3,
-    "Bild": "http://placehold.it/250x250"
+    "name": "Mustermann",
+    "nameMan": "Manfred",
+    "numMan": 1,
+    "woman": "Erika",
+    "numWoman": 1,
+    "picture": ""
   },
   "2016": {
-    "Name": "TODO",
-    "Mann": "TODO",
-    "AnzahlMann": 4,
-    "Frau": "TODO",
-    "AnzahlFrau": 4,
-    "Bild": "http://placehold.it/250x250"
+    "name": "Mustermann",
+    "nameMan": "Manfred",
+    "numMan": 1,
+    "woman": "Erika",
+    "numWoman": 1,
+    "picture": ""
   },
   "2017": {
-    "Name": "TODO",
-    "Mann": "TODO",
-    "AnzahlMann": 5,
-    "Frau": "TODO",
-    "AnzahlFrau": 5,
-    "Bild": "http://placehold.it/250x250"
+    "name": "Mustermann",
+    "nameMan": "Manfred",
+    "numMan": 1,
+    "woman": "Erika",
+    "numWoman": 1,
+    "picture": ""
   }
 }

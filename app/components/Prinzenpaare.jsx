@@ -45,9 +45,9 @@ class Prinzenpaare extends Component {
 
   createImage (imageUrl) {
     if (imageUrl) {
-      return <img src={imageUrl}/>;
+      return <img style={{margin: 'auto'}} src={imageUrl}/>;
     } else {
-      return <img src="http://via.placeholder.com/1000x1150"/>;
+      return <img style={{margin: 'auto'}} src="http://via.placeholder.com/500x500"/>;
     }
   }
 
@@ -90,6 +90,17 @@ class Prinzenpaare extends Component {
       );
     }
 
+    let juniorItems = [];
+    for (let kppYear in this.props.junior) {
+      let kppItem = this.props.junior[kppYear];
+      juniorItems.push(
+        <div className={kppItem.active ? 'item active' : 'item'} id={'kppYear'+kppYear}>
+          {this.createImage(kppItem.picture)}
+          {this.createCaption(kppItem,kppYear)}
+        </div>
+      );
+    }
+
     return (
       <div>
         <Header titleText={'Prinzengallerie'}/>
@@ -112,14 +123,25 @@ class Prinzenpaare extends Component {
             </div>
           </div>
         </section>
-        <section id="junior">
+        {/*<section id="junior">
           <div className="container">
             <div className="row">
               <div className="col-lg-12"></div>
-              <h2 className="text-center">Termine</h2>
+              <h2 className="text-center">Kinderprinzenpaare</h2>
+              <div id="kinderPrinzenCarousel" className="carousel slide">
+                <div className="carousel-inner">
+                  {juniorItems}
+                </div>
+                <a className="left carousel-control" href="#kinderPrinzenCarousel" data-slide="prev">
+                  <span className="fa fa-chevron-left fa-2x"></span>
+                </a>
+                <a className="right carousel-control" href="#kinderPrinzenCarousel" data-slide="next">
+                  <span className="fa fa-chevron-right fa-2x"></span>
+                </a>
+              </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     );
   }

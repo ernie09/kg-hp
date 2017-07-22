@@ -1,10 +1,22 @@
 @import "variables.less";
 @import "mixins.less";
-@import "font-awesome/less/font-awesome";
 
 .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+#prinzenCarousel {
+	height: 500px;
+	border: 1px solid red;
+}
+#prinzenCarousel > div .carousel-caption {
+	top: inherit;
+}
+
+#kinderPrinzenCarousel {
+	height: 500px;
+	border: 1px solid red;
 }
 
 body {
@@ -312,22 +324,35 @@ header {
 
 .carousel-control.left, .carousel-control.right {
 	background-image:none !important;
-	opacity:1;
-	top:50%
+	opacity: 1;
+	top: 50%;
+	color: @theme-success;
+	text-shadow: white 0.1em 0.1em 0.1em;
 }
 .carousel-caption {
-	top: 50%;
-	text-align: left;
-  height: auto;
+	top: 80%;
+	left: 1%;
+	text-align: center;
+	color: black;
+	text-shadow: white 0.1em 0.1em 0.1em;
+	max-width: 35%;
+	background-color: rgba(244, 244, 244, 0.85);	
+	border: 1px solid #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 1px 2px 4px rgba(0,0,0,.4);
 }
 .carousel-caption h2 {
-	line-height: 160%
+	line-height: 160%;
+	text-shadow: none;
 }
 .carousel-caption h2 span {
 	background: @theme-success;
 	padding: 10px 20px;
 	color: #fff;
-	border-left:3px solid #fff;
+	border-left: 3px solid #fff;
+	font-size: 19px
 }
 .carousel .carousel {
 		height: 70%;
