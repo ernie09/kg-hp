@@ -37,6 +37,7 @@
     "numMan": 1,
     "woman": "Erika",
     "numWoman": 1,
-    "picture": ""
+    "picture": "",
+    "active": true
   }
 }

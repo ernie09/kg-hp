@@ -51,12 +51,11 @@ class Prinzenpaare extends Component {
     }
   }
 
-  createCaption (ppItem, year) {
-    // debugger
+  createCaption (ppItem, year, junior) {
     return <div className="container-fluid">
       <div className="carousel-caption">
         <h2>
-          <span>Prinzenpaar {year}</span>
+          <span>{!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} {year}</span>
         </h2>
         <p className="caption">
           <span>Prinz {ppItem.nameMan} ({ppItem.name}) {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
@@ -96,7 +95,7 @@ class Prinzenpaare extends Component {
       juniorItems.push(
         <div className={kppItem.active ? 'item active' : 'item'} id={'kppYear'+kppYear}>
           {this.createImage(kppItem.picture)}
-          {this.createCaption(kppItem,kppYear)}
+          {this.createCaption(kppItem, kppYear, true)}
         </div>
       );
     }
@@ -123,7 +122,7 @@ class Prinzenpaare extends Component {
             </div>
           </div>
         </section>
-        {/*<section id="junior">
+        <section id="junior">
           <div className="container">
             <div className="row">
               <div className="col-lg-12"></div>
@@ -141,7 +140,7 @@ class Prinzenpaare extends Component {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </div>
     );
   }
