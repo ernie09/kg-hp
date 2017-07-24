@@ -1,4 +1,5 @@
 const path = require('path');
+const CustomAntThemeModifyVars = require('./app/theme/antVars.js');
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -34,12 +35,13 @@ module.exports = {
           paths: [
             path.resolve(__dirname, 'node_modules'),
             path.resolve(__dirname, 'app/less')
-          ]
+          ],
+          modifyVars: CustomAntThemeModifyVars()
         }
       }]
     },
     {
-      test: /\.jsx?$/,
+      test: /\.(js|jsx)$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
     }, {
