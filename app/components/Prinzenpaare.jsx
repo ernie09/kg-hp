@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
-import {Carousel, Card} from 'antd';
-import YearSlider from './YearSlider.jsx';
+import { Carousel, Panel } from 'react-bootstrap';
+import Slider from 'react-rangeslider';
 
 import Header from './Header.jsx';
 import {loadPPSenior, loadPPJunior} from '../actions/PrinzenPaarAction';
-
 import mapNumericalToRoman from '../util/utils';
 
 var axios = require('axios');
@@ -24,6 +23,13 @@ class Prinzenpaare extends Component {
 
   constructor() {
     super();
+
+    this.state = {
+      seniorActiveYear: 2017,
+      seniorDirection: null,
+      juniorActiveYear: 2017,
+      juniorDirection: null
+    };
   }
 
   componentWillMount() {
@@ -39,30 +45,41 @@ class Prinzenpaare extends Component {
 
   createImage(imageUrl) {
     if (imageUrl) {
-      return <img style={{margin: 'auto'}} src={imageUrl}/>;
+      return <img style={{
+        margin: 'auto'
+      }} src={imageUrl}/>;
     } else {
-      return <img style={{margin: 'auto'}} src="http://via.placeholder.com/500x500"/>;
+      return <img style={{
+        margin: 'auto'
+      }} src="http://via.placeholder.com/500x500"/>;
     }
   }
 
-  createCaption(ppItem, year, junior) {
-    return <div><h2>
-      <span>{!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} {year}</span>
-    </h2>
-    <p className="caption">
-      <span>Prinz {ppItem.nameMan}
-        ({ppItem.name}) {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan
-          ? ppItem.titleMan
-          : ''},<br/>
-        Prinzessin {ppItem.woman}
-        {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman
-          ? ppItem.titleWoman
-          : ''}</span>
-    </p></div>;
+  createCarouselItem(ppItem, year, junior) {
+    let itm = <Carousel.Item>
+      { this.createImage(ppItem.picture) }
+      <Carousel.Caption>
+        <Panel header={<h3>{!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} {year}</h3>}>
+          Prinz {ppItem.nameMan} ({ppItem.name}) {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
+          Prinzessin {ppItem.woman} {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman ? ppItem.titleWoman : ''}
+        </Panel>
+      </Carousel.Caption>
+    </Carousel.Item>;
+    return itm;
   }
 
-  onChange(a, b, c) {
-    console.log(a, b, c);
+  handleSeniorChange = (value, e) => {
+    this.setState({
+      seniorActiveYear: e.direction ? value + 1949 : value,
+      seniorDirection: e ? e.direction : this.state.direction
+    });
+  }
+
+  handleJuniorChange = (value, e) => {
+    this.setState({
+      juniorActiveYear: e.direction ? value + 2013 : value,
+      juniorDirection: e ? e.direction : this.state.direction
+    });
   }
 
   render() {
@@ -78,33 +95,19 @@ class Prinzenpaare extends Component {
       return <div/>;
     }
 
-    let seniorCards = [];
+    let seniorItems = [];
     for (let ppYear in this.props.senior) {
       let ppItem = this.props.senior[ppYear];
-      seniorCards.push(
-        <Card style={{ width: 500 }} bodyStyle={{ padding: 0 }}>
-          <div className="custom-image">,
-            {this.createImage(ppItem.picture)},
-          </div>
-          <div className="custom-card">,
-            {this.createCaption(ppItem, ppYear, false)},
-          </div>
-        </Card>
+      seniorItems.push(
+        this.createCarouselItem(ppItem, ppYear, false)
       );
     }
 
-    let juniorCards = [];
+    let juniorItems = [];
     for (let kppYear in this.props.junior) {
       let kppItem = this.props.junior[kppYear];
-      juniorCards.push(
-        <Card style={{ width: 500 }} bodyStyle={{ padding: 0 }}>
-          <div className="custom-image">,
-            {this.createImage(kppItem.picture)},
-          </div>
-          <div className="custom-card">,
-            {this.createCaption(kppItem, kppYear, false)},
-          </div>
-        </Card>
+      juniorItems.push(
+        this.createCarouselItem(kppItem, kppYear, true)
       );
     }
 
@@ -112,16 +115,26 @@ class Prinzenpaare extends Component {
       <div>
         <Header titleText={'Prinzengallerie'}/>
         <section id="senior">
-          <Carousel afterChange={this.onChange}>
-            {seniorCards}
+          <Carousel indicators={false} interval={null} activeIndex={this.state.seniorActiveYear - 1949} direction={this.state.seniorDirection} onSelect={this.handleSeniorChange}>
+            {seniorItems}
           </Carousel>
-          <YearSlider />
+          <Slider
+            min={1949}
+            max={2017}
+            value={this.state.seniorActiveYear}
+            onChange={this.handleSeniorChange}
+          />
         </section>
         <section id="junior">
-          <Carousel afterChange={this.onChange}>
-            {juniorCards}
+          <Carousel indicators={false} interval={null} activeIndex={this.state.juniorActiveYear - 2013} direction={this.state.juniorDirection} onSelect={this.handleJuniorChange}>
+            {juniorItems}
           </Carousel>
-          <YearSlider />
+          <Slider
+            min={2013}
+            max={2017}
+            value={this.state.juniorActiveYear}
+            onChange={this.handleJuniorChange}
+          />
         </section>
       </div>
     );

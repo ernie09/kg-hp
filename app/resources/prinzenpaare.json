@@ -1,4 +1,84 @@
 {
+  "1949": {
+    "name": "Neumann",
+    "nameMan": "Franz",
+    "numMan": 1,
+    "woman": "Michen",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1950": {
+    "name": "Grüber",
+    "nameMan": "Willi",
+    "numMan": 1,
+    "woman": "Gisela",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1951": {
+    "name": "Grüber",
+    "nameMan": "Johannes",
+    "numMan": 1,
+    "woman": "Anni",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1952": {
+    "name": "Böcking",
+    "nameMan": "Adolf",
+    "numMan": 1,
+    "woman": "Änni",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1953": {
+    "name": "Paganetti",
+    "nameMan": "Ferdinand",
+    "numMan": 1,
+    "woman": "Elisabeth",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1954": {
+    "name": "Paganetti",
+    "nameMan": "Werner",
+    "numMan": 1,
+    "woman": "Änni",
+    "numWoman": 2,
+    "picture": ""
+  },
+  "1955": {
+    "name": "Roth",
+    "nameMan": "Willi",
+    "numMan": 2,
+    "woman": "Änne",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1956": {
+    "name": "Flesch",
+    "nameMan": "Willi",
+    "numMan": 3,
+    "woman": "Trude",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1957": {
+    "name": "Oswald",
+    "nameMan": "Robert",
+    "numMan": 1,
+    "woman": "Agnes",
+    "numWoman": 1,
+    "picture": ""
+  },
+  "1958": {
+    "name": "Nassen",
+    "nameMan": "Franz",
+    "numMan": 2,
+    "woman": "Adelheid",
+    "numWoman": 1,
+    "picture": ""
+  },
   "1959": {
     "name": "Linsler",
     "nameMan": "Hans",
@@ -470,7 +550,7 @@
     "woman": "Marina",
     "numWoman": 2,
     "picture": "img/prinzenpaare/senior/2017.jpg",
-    "titleMan": "von BMW bekannt",
+    "titleMan": "von BMW bekannt,",
     "titleWoman": "aus dem Roßbe Land",
     "active": true
   }

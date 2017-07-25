@@ -1,24 +1,9 @@
 @import "variables.less";
 @import "mixins.less";
-@import "prinzengallerie.less";
 
 .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
-}
-
-#prinzenCarousel {
-	height: 500px;
-}
-#prinzenCarousel > div .carousel-caption {
-	top: inherit;
-}
-
-#kinderPrinzenCarousel {
-	height: 500px;
-}
-#kinderPrinzenCarousel > div .carousel-caption {
-	top: inherit;
 }
 
 body {
@@ -327,49 +312,34 @@ header {
 .carousel-control.left, .carousel-control.right {
 	background-image:none !important;
 	opacity: 1;
-	top: 50%;
 	color: @theme-success;
 	text-shadow: white 0.1em 0.1em 0.1em;
 }
 .carousel-caption {
-	top: 80%;
-	left: 1%;
-	text-align: center;
+	left: 5%;
+	max-width: 30%;
 	color: black;
 	text-shadow: white 0.1em 0.1em 0.1em;
-	max-width: 35%;
-	background-color: rgba(244, 244, 244, 0.85);
-	border: 1px solid #FFF;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	box-shadow: 1px 2px 4px rgba(0,0,0,.4);
-}
-.carousel-caption h2 {
-	line-height: 160%;
-	text-shadow: none;
-}
-.carousel-caption h2 span {
-	background: @theme-success;
-	padding: 10px 20px;
-	color: #fff;
-	border-left: 3px solid #fff;
-	font-size: 19px
-}
-.carousel .carousel {
-		height: 70%;
-}
+	top: 70%;
 
-.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
-.onebyone-carosel .active.left { left: -33.33%; }
-.onebyone-carosel .active.right { left: 33.33%; }
-.onebyone-carosel .next { left: 33.33%; }
-.onebyone-carosel .prev { left: -33.33%; }
-
+	.panel-heading {
+		background-color: lighten(@theme-success, 5%);
+		color: white;
+		text-shadow: black 0.1em 0.1em 0.1em;
+	}
+}
 @media(max-width:767px) {
 	.carousel-caption {
-		display: none;
+		left: 10%;
+		max-width: 100%;
+		top: 65%;
+		font-size: 9px;
+		opacity: 0.75;
 	}
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+	background-color: lighten(@theme-success, 5%) !important;
 }
 
 .navbar-custom {
