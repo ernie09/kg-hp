@@ -115,6 +115,7 @@ class Prinzenpaare extends Component {
       <div>
         <Header titleText={'Prinzengallerie'}/>
         <section id="senior">
+          <h1 align="center"><b>Prinzenpaare der KG</b></h1>
           <Carousel indicators={false} interval={null} activeIndex={this.state.seniorActiveYear - 1949} direction={this.state.seniorDirection} onSelect={this.handleSeniorChange}>
             {seniorItems}
           </Carousel>
@@ -126,6 +127,7 @@ class Prinzenpaare extends Component {
           />
         </section>
         <section id="junior">
+          <h1 align="center"><b>Kinderprinzenpaare der KG</b></h1>
           <Carousel indicators={false} interval={null} activeIndex={this.state.juniorActiveYear - 2013} direction={this.state.juniorDirection} onSelect={this.handleJuniorChange}>
             {juniorItems}
           </Carousel>

@@ -35,7 +35,7 @@ class News extends Component {
                 <i className="glyphicon glyphicon-info-sign"></i>
               </div>
               <div className="panel-heading">
-                <h1 className="panel-title">Bericht der Jahreshauptversammlung 2017</h1>
+                <h2 className="panel-title">Bericht der Jahreshauptversammlung 2017</h2>
               </div>
               <div className="panel-body">
                 <h5>Neues im Vorstand - Freude über Mitgliederzuwachs</h5>

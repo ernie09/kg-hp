@@ -19,7 +19,7 @@ class Historie extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <img src="img/historie/1945.png" width="50%" alt="Test" className="img-responsive pull-right abstand-img"/>
+                <img src="img/historie/1945.png" className="img-responsive pull-right abstand-img"/>
                 <p className="medium">Im Jahre 1929 setzten sich für die damaligen Verhältnisse 11 mutige Männer zusammen einen Verein zu gründen. Sie machten sich zur Aufgabe das Geschehen von “Hüh” und “Scheldche” an den Tag zu bringen. Im denkwürdigem Jagdhaus wurde der Entschluss
                   gefasst ihn Karnevalsverein “Mir hale Pool” (wir bleiben bei der Stange) zu nennen. Der 1. Auftakt war dann am Karnevalssonntag des Jahres 1930 nach der Messe in Verscheid. Aus dem Fenster des Vereinslokals Stüber (heute Paganetti) stiegen
                   11 Männer auf eine Bohle die man auf die Eisenstange gelegt hatte, worauf man sonst die Fahrräder abstellte. Die Kirchenbesucher, staunten nicht schlecht, als sie auf dem Nachhauseweg 11 Herren in Schwarz im “Gehste-Hinter-Mich” und Zylinder
@@ -34,7 +34,7 @@ class Historie extends Component {
                   Peter Klöckner. Aber auch weitere Büttenredner schliefen nicht und warfen ihre Reden in den berüchtigten Kummerkasten im Vereinsgasthaus, wo man bis heute noch immer nicht weiß, wer die Verfasser waren. Karnevalskostüme wurden in Waldbreitbach
                   bei dem Verleih Albert Lewi geholt.</p>
 
-                <img src="img/historie/1966.png" width="25%" alt="Test" className="img-responsive pull-left abstand-img"/>
+                <img src="img/historie/1966.png" className="img-responsive pull-left abstand-img"/>
                 <p className="medium">Womit niemand rechnete, die selbstständigen Händler und Handwerker mußte den Verein verlassen, da sie um ihre Existenz fürchteten. Sie bekamen zu hören “Verkauft Eure Zeug an den Narrenclub!” Da es nicht an Nachwuchs fehlte ging
                   es trotzdem weiter. Not macht bekanntermaßen erfinderisch so wurden in der Schuhmacherei Ludwig Brücken neue Pläne geschmiedet. Plakte wurden mit Bltzschwärze geschrieben und mit der Schihmacherstanze gedruckt. Die Zeit war arm, aber schön
                   bis der Krieg ausbrach und alles zum Stillstand kam. Nach dem Krieg 1948 waren es die zurückgekehrten Narren, die das Vereinsleben in Bewegung brachten. Ab dieser Zeit hatte Verscheid sein erstes Prinzenpaar, ein Tradition die bis heute lückenlos
@@ -45,14 +45,14 @@ class Historie extends Component {
                   Kappensitzung vor dem Karnevalssonntag abzuhalten worin das Prinzenpaar im Vorfeld proklamiert werden sollte, was der Höhepunkt der Sitzung darstellt. Ganz besonders Stolz ist die KG bis heute noch darauf, dass das Programm
                   der Kappensitzung ausschließlich von Akteuren aus der Bevölkerung bestritten wird. 1963 gründete die KG, zwischenzeitlich mit “rude Juppe” roten Jacken eine Tanzgruppe, zwischenzeitlich ein weiterer Höhepunkt im Karneval ob Hüh und Scheldche.</p>
 
-                <img src="img/historie/1968.png" width="50%" alt="Prinzengarde 1968" className="img-responsive pull-right abstand-img"/>
+                <img src="img/historie/1968.png" alt="Prinzengarde 1968" className="img-responsive pull-right abstand-img"/>
                 <p className="medium">Bei der Gründung der “großen Wiedtaler-Karnevals-Gemeinschaft - 4 unter einem Hut” 1971 waren die Verscheider Karnevallisten unter der Führung des 1. Vorsitzenden Franz Neumann mit federführend. Der Karnevalssamstag wurde während dieser Zeit für die Ses-
                   sionserweiterung mit einem Maskenball ausgefüllt. Heute findet der alljährliche Prinzenball statt, an welchem die “ruden Juppen” einen Tag “durchatmen” können und die Mitglieder im Prinzenmotto ihr Kostüm auftragen. 1990 wurde erstmalig eine
                   Prinzenpaar, Klaus und Rita Rams, durch Losentscheid proklamiert, weil es nicht gelang bis zum Abend vor der Sitzung ein Prinzenpaar zu finden. 1991/1992 hatte das Prinzenpaar, Fred und Elke Wittlich, eine Doppelsession, da durch den Golfkrieg
                   politisch entschieden wurde Karnevals- umzüge auszusetzen. 1993 wurde die KG aus gemeinnützig anerkannt. Um die Motivation der neuer Mitglieder wieder zu Beleben wurde der Passus der Verpflichtung zur Übernahme des Prinzenamtes gestrichen.
                   Die Tanzgruppe bekam ein Mitspracherecht in der KG und somit wurde die Trainerin der Tanzgruppe Margot Lau als erste Frau in die KG aufgenommen.
                 </p>
-                <img src="img/historie/1978.png" width="50%" alt="Test" className="img-responsive pull-left abstand-img"/>
+                <img src="img/historie/1978.png" className="img-responsive pull-left abstand-img"/>
 
                 <p className="medium">
                   Der Kinderkarneval gewann in dieser Zeit ebenfalls immer mehr an Bedeutung. Dies war besonders daran zu erkennen, dass immer mehr Kinder und Eltern an den Vorbereitungen für den Kinderkarneval Freude fanden. Die Sitzung wird bis heute von einem Kinderelferrat

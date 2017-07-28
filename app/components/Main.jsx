@@ -16,13 +16,13 @@ class Main extends Component {
     return (
       <div>
         <Header titleText={'"Mir hale Pool" Verscheid'} skillsText="3x Hüh'Scheldche Alaaf!" hrClassName="star-light">
-          <p>Die Karnevalsgesellschaft &quot;Mir hale Pool&quot; Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
+          <p className="medium">Die Karnevalsgesellschaft &quot;Mir hale Pool&quot; Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
         </Header>
-        <Carousel indicators={true} interval={10000}>
+        <Carousel indicators={false} interval={10000}>
           <Carousel.Item>
             <img src="img/prinzenpaare/1.JPG" />
             <Carousel.Caption>
-              <Panel header={<h2>User Prinzenpaar</h2>}>
+              <Panel>
                 Prinz Tobi I. von BMW bekannt,<br/>Prinzessin Marina II. , aus dem Roßbe Land
               </Panel>
             </Carousel.Caption>
@@ -30,7 +30,7 @@ class Main extends Component {
           <Carousel.Item>
             <img src="img/prinzenpaare/2.JPG" />
             <Carousel.Caption>
-              <Panel header={<h2>Unser Kinderprinzenpaar</h2>}>
+              <Panel>
                 Prinz Manuel I. ein flinker Fußballer der Borussia Dortmund liebt<br/>Prinzessin Chiara I. schwingt ihr Bein und schwimmt im DLRG-Verein
               </Panel>
             </Carousel.Caption>

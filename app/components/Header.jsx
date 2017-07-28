@@ -15,7 +15,7 @@ class Header extends Component {
         <div className="row">
           <div className="col-lg-12">
             <div className="intro-text">
-              <span className="name">{this.props.titleText}</span>
+              <h1 className="name">{this.props.titleText}</h1>
               {
                 this.props.skillsText ? <span className="skills">{this.props.skillsText}</span> : undefined
               }
