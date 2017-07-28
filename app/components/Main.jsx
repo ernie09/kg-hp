@@ -22,15 +22,15 @@ class Main extends Component {
           <Carousel.Item>
             <img src="img/prinzenpaare/1.JPG" />
             <Carousel.Caption>
-              <Panel>
-                Prinz Tobi I. von BMW bekannt,<br/>Prinzessin Marina II. , aus dem Roßbe Land
+              <Panel header={<h3>Unser Prinzenpaar</h3>}>
+                Prinz Tobi I. von BMW bekannt,<br/>Prinzessin Marina II. aus dem Roßbe Land
               </Panel>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img src="img/prinzenpaare/2.JPG" />
             <Carousel.Caption>
-              <Panel>
+              <Panel header={<h3>Unser Kinderprinzenpaar</h3>}>
                 Prinz Manuel I. ein flinker Fußballer der Borussia Dortmund liebt<br/>Prinzessin Chiara I. schwingt ihr Bein und schwimmt im DLRG-Verein
               </Panel>
             </Carousel.Caption>
