@@ -20,7 +20,7 @@ class Historie extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <img src="img/historie/1945.png" width="50%" alt="Test" className="img-responsive pull-right abstand-img"/>
-                <p>Im Jahre 1929 setzten sich für die damaligen Verhältnisse 11 mutige Männer zusammen einen Verein zu gründen. Sie machten sich zur Aufgabe das Geschehen von “Hüh” und “Scheldche” an den Tag zu bringen. Im denkwürdigem Jagdhaus wurde der Entschluss
+                <p className="medium">Im Jahre 1929 setzten sich für die damaligen Verhältnisse 11 mutige Männer zusammen einen Verein zu gründen. Sie machten sich zur Aufgabe das Geschehen von “Hüh” und “Scheldche” an den Tag zu bringen. Im denkwürdigem Jagdhaus wurde der Entschluss
                   gefasst ihn Karnevalsverein “Mir hale Pool” (wir bleiben bei der Stange) zu nennen. Der 1. Auftakt war dann am Karnevalssonntag des Jahres 1930 nach der Messe in Verscheid. Aus dem Fenster des Vereinslokals Stüber (heute Paganetti) stiegen
                   11 Männer auf eine Bohle die man auf die Eisenstange gelegt hatte, worauf man sonst die Fahrräder abstellte. Die Kirchenbesucher, staunten nicht schlecht, als sie auf dem Nachhauseweg 11 Herren in Schwarz im “Gehste-Hinter-Mich” und Zylinder
                   karnevalistisch aufmacht sahen. Es waren: aus Verscheid Heinrich Brücken, Ludwig Brücken, Willi Stüber; aus Hochscheid Otto Paganetti, Anton Müller; aus Goldscheid Johann Thomas, Johann Müller; aus Hollig Lorens Seger, Johann Rams und aus
@@ -30,12 +30,12 @@ class Historie extends Component {
                   Kasse kannte man nicht und es wurde meist in Getränke investiert. Die Gründer kamen aus zu diesem Zweck auf die Idee einen “Schnorres” (Schnurbart) wachsen zu lassen. Der Sieger war der, der die meisten Haare hatte. Mit 17 Haaren gewann Willi
                   Hesseler, der Verlierer musste eine Runde zahlen.</p>
 
-                <p>Im Laufe der Zeit wusste man schnell wo die einzelnen Büttenreden gedichtet wurden. Dies war natürlich im alten Jagdhaus. Die Dichter kamen aus Hollig; Gertrud Seger, Katharina Beck, Katharina Rams, Maria Küpper, Lorens Seger und aus Elsbach
+                <p className="medium">Im Laufe der Zeit wusste man schnell wo die einzelnen Büttenreden gedichtet wurden. Dies war natürlich im alten Jagdhaus. Die Dichter kamen aus Hollig; Gertrud Seger, Katharina Beck, Katharina Rams, Maria Küpper, Lorens Seger und aus Elsbach
                   Peter Klöckner. Aber auch weitere Büttenredner schliefen nicht und warfen ihre Reden in den berüchtigten Kummerkasten im Vereinsgasthaus, wo man bis heute noch immer nicht weiß, wer die Verfasser waren. Karnevalskostüme wurden in Waldbreitbach
                   bei dem Verleih Albert Lewi geholt.</p>
 
                 <img src="img/historie/1966.png" width="25%" alt="Test" className="img-responsive pull-left abstand-img"/>
-                <p>Womit niemand rechnete, die selbstständigen Händler und Handwerker mußte den Verein verlassen, da sie um ihre Existenz fürchteten. Sie bekamen zu hören “Verkauft Eure Zeug an den Narrenclub!” Da es nicht an Nachwuchs fehlte ging
+                <p className="medium">Womit niemand rechnete, die selbstständigen Händler und Handwerker mußte den Verein verlassen, da sie um ihre Existenz fürchteten. Sie bekamen zu hören “Verkauft Eure Zeug an den Narrenclub!” Da es nicht an Nachwuchs fehlte ging
                   es trotzdem weiter. Not macht bekanntermaßen erfinderisch so wurden in der Schuhmacherei Ludwig Brücken neue Pläne geschmiedet. Plakte wurden mit Bltzschwärze geschrieben und mit der Schihmacherstanze gedruckt. Die Zeit war arm, aber schön
                   bis der Krieg ausbrach und alles zum Stillstand kam. Nach dem Krieg 1948 waren es die zurückgekehrten Narren, die das Vereinsleben in Bewegung brachten. Ab dieser Zeit hatte Verscheid sein erstes Prinzenpaar, ein Tradition die bis heute lückenlos
                   besteht. Der erste Präsident war “de Börder Jupp” Josef Reuschenbach. Der Verein verfügte auch über ein Funkenmariechen, was damals schon eine Sensation darstellte. Weiterhin wurden die Hühsches Jecken in altgewohnter Art von Büttenredner
@@ -46,8 +46,7 @@ class Historie extends Component {
                   der Kappensitzung ausschließlich von Akteuren aus der Bevölkerung bestritten wird. 1963 gründete die KG, zwischenzeitlich mit “rude Juppe” roten Jacken eine Tanzgruppe, zwischenzeitlich ein weiterer Höhepunkt im Karneval ob Hüh und Scheldche.</p>
 
                 <img src="img/historie/1968.png" width="50%" alt="Prinzengarde 1968" className="img-responsive pull-right abstand-img"/>
-                <p>
-                  Bei der Gründung der “großen Wiedtaler-Karnevals-Gemeinschaft - 4 unter einem Hut” 1971 waren die Verscheider Karnevallisten unter der Führung des 1. Vorsitzenden Franz Neumann mit federführend. Der Karnevalssamstag wurde während dieser Zeit für die Ses-
+                <p className="medium">Bei der Gründung der “großen Wiedtaler-Karnevals-Gemeinschaft - 4 unter einem Hut” 1971 waren die Verscheider Karnevallisten unter der Führung des 1. Vorsitzenden Franz Neumann mit federführend. Der Karnevalssamstag wurde während dieser Zeit für die Ses-
                   sionserweiterung mit einem Maskenball ausgefüllt. Heute findet der alljährliche Prinzenball statt, an welchem die “ruden Juppen” einen Tag “durchatmen” können und die Mitglieder im Prinzenmotto ihr Kostüm auftragen. 1990 wurde erstmalig eine
                   Prinzenpaar, Klaus und Rita Rams, durch Losentscheid proklamiert, weil es nicht gelang bis zum Abend vor der Sitzung ein Prinzenpaar zu finden. 1991/1992 hatte das Prinzenpaar, Fred und Elke Wittlich, eine Doppelsession, da durch den Golfkrieg
                   politisch entschieden wurde Karnevals- umzüge auszusetzen. 1993 wurde die KG aus gemeinnützig anerkannt. Um die Motivation der neuer Mitglieder wieder zu Beleben wurde der Passus der Verpflichtung zur Übernahme des Prinzenamtes gestrichen.
@@ -55,12 +54,12 @@ class Historie extends Component {
                 </p>
                 <img src="img/historie/1978.png" width="50%" alt="Test" className="img-responsive pull-left abstand-img"/>
 
-                <p>
+                <p className="medium">
                   Der Kinderkarneval gewann in dieser Zeit ebenfalls immer mehr an Bedeutung. Dies war besonders daran zu erkennen, dass immer mehr Kinder und Eltern an den Vorbereitungen für den Kinderkarneval Freude fanden. Die Sitzung wird bis heute von einem Kinderelferrat
                   und einem Kinderpräsident geführt. Der erste Kinderpräsident war Christoph Wester, sein Amt füllt heute Nils Neumann aus.
                 </p>
 
-                <p>
+                <p className="medium">
                   Auch mit dem Wechsel ins neue Jahrtausend nahm die KG die neuen Herausforderungen der karnevalistischen Brauchtumspflege an. Neben der Tanzgarde erkannte der Vorstand unter Wolfgang Rüth weitere weibliche Mitglieder aufzunehmen. In Eigeninitiative gründete
                   Bea Mathey die Abteilung Bambini und Junioren der Tanzgarde ins Leben. Es wurden zusätzlich Kontakte zu weiteren Vereinen geknüpft. Ab 2001 wurde nun auch alljährlich ein Sessionslied kreiert. Michael Stüber schreibt bis heute die Lieder,
                   die sowohl zum Mitsingen einladen als auch die Eigenheiten des Hühsches Karneval beschreiben. Das wohl bekannteste Lied ist “He op de Hüh sin mir jebore.” 2005 wurde erstmals ein Prinzenpaar aus Breitscheid proklamiert unter dem Vorsitz von

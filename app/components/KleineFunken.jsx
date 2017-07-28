@@ -14,16 +14,12 @@ class KleineFunken extends Component {
       <div>
         <Header titleText={'Kleine Funken'}/>
         <section id="group">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <img src="img/garden/kleinefunken.jpg" className="img-responsive abstand-img" alt="Jungfunken mit Betreuerinnen"/>
-                <h3>
-                  <b>Trainerin:</b>
-                  Tina Faust</h3><br/>
-                <h3>
-                  <b>Betreuerin:</b>
-                  Lena Br&uuml;digam</h3><br/>
+                <img src="img/garden/kleinefunken.jpg" className="img-responsive abstand-img" alt="Die kleinen Funken mit Betreuerinnen"/>
+                <h3><b>Trainerin: </b>Tina Faust</h3><br/>
+                <h3><b>Betreuerin: </b>Lena Br&uuml;digam</h3><br/>
               </div>
             </div>
           </div>
