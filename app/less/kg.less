@@ -372,6 +372,11 @@ header {
 .rangeslider-horizontal .rangeslider__fill {
 	background-color: lighten(@theme-success, 5%) !important;
 }
+.rangeslider.rangeslider-horizontal {
+	width: 90%;
+  margin: 0 auto;
+	margin-top: 20px;
+}
 
 section {
 	padding: 100px 0;
@@ -383,9 +388,10 @@ section {
 }
 
 section.success {
-	background: @theme-success;
+	background: lighten(@theme-success, 33%);
 	color: white;
 }
+
 @media(max-width:767px) {
 	section {
 		padding: 75px 0;

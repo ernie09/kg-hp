@@ -14,6 +14,15 @@ class Kg extends Component {
     return (
       <div>
         <Header titleText={'Die roten Jacken'}/>
+        <section id="group">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <img src="img/kg/rotejacken.jpg" className="img-responsive" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }

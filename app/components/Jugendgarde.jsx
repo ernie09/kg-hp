@@ -13,7 +13,7 @@ class Jugendgarde extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Jugendgarde'}/>
+        <Header titleText={'Jungfunken'}/>
       </div>
     );
   }

@@ -55,13 +55,21 @@ class Prinzenpaare extends Component {
     }
   }
 
+  generatePrinzText(ppItem, junior) {
+    return ppItem.noPP ?
+      <p>Leider kein {!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} in diesem Jahr</p>:
+      <p>Prinz {ppItem.nameMan} {ppItem.name ? '(' + ppItem.name + ')' : ''} {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
+         Prinzessin {ppItem.woman} {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman ? ppItem.titleWoman : ''}</p>;
+  }
+
   createCarouselItem(ppItem, year, junior) {
-    let itm = <Carousel.Item>
+    let itm = <Carousel.Item key={!junior ? 'Prinzenpaar'+year : 'Kinderprinzenpaar'+year}>
       { this.createImage(ppItem.picture) }
       <Carousel.Caption>
         <Panel header={<h3>{!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} {year}</h3>}>
-          Prinz {ppItem.nameMan} {ppItem.name ? '(' + ppItem.name + ')' : ''} {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
-          Prinzessin {ppItem.woman} {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman ? ppItem.titleWoman : ''}
+          {
+            this.generatePrinzText(ppItem, junior)
+          }
         </Panel>
       </Carousel.Caption>
     </Carousel.Item>;
@@ -77,7 +85,7 @@ class Prinzenpaare extends Component {
 
   handleJuniorChange = (value, e) => {
     this.setState({
-      juniorActiveYear: e.direction ? value + 2013 : value,
+      juniorActiveYear: e.direction ? value + 1978 : value,
       juniorDirection: e ? e.direction : this.state.direction
     });
   }
@@ -115,7 +123,7 @@ class Prinzenpaare extends Component {
       <div>
         <Header titleText={'Prinzengallerie'}/>
         <section id="senior">
-          <h1 align="center"><b>Prinzenpaare der KG</b></h1>
+          <h1><b>Prinzenpaare der KG</b></h1>
           <Carousel indicators={false} interval={null} activeIndex={this.state.seniorActiveYear - 1949} direction={this.state.seniorDirection} onSelect={this.handleSeniorChange}>
             {seniorItems}
           </Carousel>
@@ -126,13 +134,18 @@ class Prinzenpaare extends Component {
             onChange={this.handleSeniorChange}
           />
         </section>
+        <hr style={{
+          width: '90%',
+          border: '1px solid #aaa',
+          borderRadius: 9
+        }} />
         <section id="junior">
-          <h1 align="center"><b>Kinderprinzenpaare der KG</b></h1>
-          <Carousel indicators={false} interval={null} activeIndex={this.state.juniorActiveYear - 2013} direction={this.state.juniorDirection} onSelect={this.handleJuniorChange}>
+          <h1><b>Kinderprinzenpaare der KG</b></h1>
+          <Carousel indicators={false} interval={null} activeIndex={this.state.juniorActiveYear - 1978} direction={this.state.juniorDirection} onSelect={this.handleJuniorChange}>
             {juniorItems}
           </Carousel>
           <Slider
-            min={2013}
+            min={1978}
             max={2017}
             value={this.state.juniorActiveYear}
             onChange={this.handleJuniorChange}
