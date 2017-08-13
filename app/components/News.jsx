@@ -20,13 +20,15 @@ class News extends Component {
           <div className="timeline">
             <div className="line text-muted"></div>
 
-            <article className="panel panel-danger panel-outline">
+            <article className="panel panel-danger">
               <div className="panel-heading icon">
                 <i className="glyphicon glyphicon-calendar"></i>
               </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Termine Session 2018</h2>
+              </div>
               <div className="panel-body">
-                <strong><p className="large">Termine:</p> </strong>
-                <p className="medium">Die Termine der Veranstaltungen -Session 2018- wurden festegelegt. <br/><a href="/termine" className="read-more">Lesen Sie hier</a></p>
+                <p className="medium">Die Termine unserer Veranstaltungen der kommenden Session 2018 wurden festegelegt. <br/><a href="/termine" className="read-more">Lesen Sie hier</a></p>
               </div>
             </article>
 

@@ -60,7 +60,7 @@ class Prinzenpaare extends Component {
       { this.createImage(ppItem.picture) }
       <Carousel.Caption>
         <Panel header={<h3>{!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} {year}</h3>}>
-          Prinz {ppItem.nameMan} ({ppItem.name}) {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
+          Prinz {ppItem.nameMan} {ppItem.name ? '(' + ppItem.name + ')' : ''} {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
           Prinzessin {ppItem.woman} {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman ? ppItem.titleWoman : ''}
         </Panel>
       </Carousel.Caption>
