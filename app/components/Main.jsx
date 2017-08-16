@@ -20,7 +20,7 @@ class Main extends Component {
         </Header>
         <Carousel indicators={false} interval={10000}>
           <Carousel.Item>
-            <img src="img/prinzenpaare/1.JPG" />
+            <img className="img-responsive carousel-image" src="img/prinzenpaare/1.JPG" />
             <Carousel.Caption>
               <Panel header={<h3>Unser Prinzenpaar</h3>}>
                 Prinz Tobi I. von BMW bekannt,<br/>Prinzessin Marina II. aus dem Roßbe Land
@@ -28,7 +28,7 @@ class Main extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src="img/prinzenpaare/2.JPG" />
+            <img className="img-responsive carousel-image" src="img/prinzenpaare/2.JPG" />
             <Carousel.Caption>
               <Panel header={<h3>Unser Kinderprinzenpaar</h3>}>
                 Prinz Manuel I. ein flinker Fußballer der Borussia Dortmund liebt<br/>Prinzessin Chiara I. schwingt ihr Bein und schwimmt im DLRG-Verein
@@ -36,7 +36,7 @@ class Main extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src="img/prinzenpaare/3.JPG" alt="Slide3"/>
+            <img className="img-responsive carousel-image" src="img/prinzenpaare/3.JPG" alt="Slide3"/>
           </Carousel.Item>
         </Carousel>
         <Footer/>

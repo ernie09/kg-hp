@@ -40,7 +40,7 @@ class App extends React.Component {
                   Men&uuml;
                   <i className="fa fa-bars"></i>
                 </button>
-                <Link className="navbar-brand" to="/"><img alt="Brand" src="img/kg.png"/></Link>
+                <Link className="navbar-brand" to="/version2"><img alt="Brand" src="img/kg.png"/></Link>
               </div>
 
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,46 +49,46 @@ class App extends React.Component {
                     <a href="#page-top"></a>
                   </li>
                   <li>
-                    <Link to="/news">Neuigkeiten</Link>
+                    <Link to="news">Neuigkeiten</Link>
                   </li>
+                  {/*<li>
+                    <Link to="kappensitzung">Kappensitzung</Link>
+                  </li>*/}
                   <li>
-                    <Link to="/kappensitzung">Kappensitzung</Link>
-                  </li>
-                  <li>
-                    <Link to="/termine">Termine</Link>
+                    <Link to="termine">Termine</Link>
                   </li>
                   <li className="dropdown">
                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Der Verein<span className="caret"></span>
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="/kg">Die roten Jacken</a>
+                        <a href="kg">Die roten Jacken</a>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
-                        <a href="/prinzengarde">Prinzengarde</a>
+                        <a href="prinzengarde">Prinzengarde</a>
                       </li>
                       <li>
-                        <a href="/jugendgarde">Jungfunken</a>
+                        <a href="jugendgarde">Jungfunken</a>
                       </li>
                       <li>
-                        <a href="/kleinefunken">Kleine Funken</a>
-                      </li>
-                      <li role="separator" className="divider"></li>
-                      <li>
-                        <a href="/prinzenpaare">Prinzenpaare</a>
+                        <a href="kleinefunken">Kleine Funken</a>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
-                        <a href="/vorstand">Vorstand</a>
+                        <a href="prinzenpaare">Prinzenpaare</a>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
-                        <Link to="/history">Historie</Link>
+                        <a href="vorstand">Vorstand</a>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
-                        <Link to="/sponsoren">Sponsoren</Link>
+                        <Link to="history">Historie</Link>
+                      </li>
+                      <li role="separator" className="divider"></li>
+                      <li>
+                        <Link to="sponsoren">Sponsoren</Link>
                       </li>
                     </ul>
                   </li>
@@ -96,10 +96,10 @@ class App extends React.Component {
                     <a href="https://sharegallery.strato.com/u/wjn-siq8/Ui-NJsqE">Bilder</a>
                   </li>
                   <li>
-                    <Link to="/contact">Kontakt</Link>
+                    <Link to="contact">Kontakt</Link>
                   </li>
                   <li>
-                    <Link to="/impressum">Impressum</Link>
+                    <Link to="impressum">Impressum</Link>
                   </li>
                 </ul>
               </div>
