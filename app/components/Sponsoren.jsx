@@ -24,44 +24,44 @@ class Sponsoren extends Component {
           <Row>
             <Col xs={6} md={3}>
               <Thumbnail href="http://www.paganettis.de/" target="_blank" src={paganetti}>
-                <h3>Gasthof Paganetti&apos;s &quot;Zur Erholung&quot;</h3>
+                <h5>Gasthof Paganetti&apos;s &quot;Zur Erholung&quot;</h5>
               </Thumbnail>
             </Col>
             <Col xs={6} md={3}>
               <Thumbnail href="http://h2682811.stratoserver.net/index.php/ct-menu-item-1" target="_blank" src={elektroSiebenmorgen}>
-                <h3>Siebenmorgen Elektro GmbH</h3>
+                <h5>Siebenmorgen Elektro GmbH</h5>
               </Thumbnail>
             </Col>
             <Col xs={6} md={3}>
               <Thumbnail href="http://www.neumannimmo.de/" target="_blank" src={immoNeumann}>
-                <h3>neumann immobilien</h3>
+                <h5>neumann immobilien</h5>
               </Thumbnail>
             </Col>
             {/*<Col xs={6} md={3}>
               <Thumbnail href="#" alt="300x300" src="http://via.placeholder.com/300x300">
-                <h3>Firma 4</h3>
+                <h5>Firma 4</h5>
               </Thumbnail>
             </Col>*/}
           </Row>
           {/*<Row>
             <Col xs={6} md={3}>
               <Thumbnail href="#" alt="300x300" src="http://via.placeholder.com/300x300">
-                <h3>Firma 5</h3>
+                <h5>Firma 5</h5>
               </Thumbnail>
             </Col>
             <Col xs={6} md={3}>
               <Thumbnail href="#" alt="300x300" src="http://via.placeholder.com/300x300">
-                <h3>Firma 6</h3>
+                <h5>Firma 6</h5>
               </Thumbnail>
             </Col>
             <Col xs={6} md={3}>
               <Thumbnail href="#" alt="300x300" src="http://via.placeholder.com/300x300">
-                <h3>Firma 7</h3>
+                <h5>Firma 7</h5>
               </Thumbnail>
             </Col>
             <Col xs={6} md={3}>
               <Thumbnail href="#" alt="300x300" src="http://via.placeholder.com/300x300">
-                <h3>Firma 8</h3>
+                <h5>Firma 8</h5>
               </Thumbnail>
             </Col>
           </Row> */}

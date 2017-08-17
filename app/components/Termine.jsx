@@ -14,7 +14,7 @@ class Termine extends Component {
     return (
       <div>
         <Header titleText={'Termine'} hrClassName="calendar-light">
-          <p className="text-center">Session 2018<br/>unvollst&auml;ndig - vorl&auml;ufig</p>
+          <p className="text-center large">Session 2018</p>
         </Header>
         <section id="events2018">
           <div className="container">

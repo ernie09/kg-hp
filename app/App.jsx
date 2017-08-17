@@ -40,7 +40,7 @@ class App extends React.Component {
                   Men&uuml;
                   <i className="fa fa-bars"></i>
                 </button>
-                <Link className="navbar-brand" to="/version2"><img alt="Brand" src="img/kg.png"/></Link>
+                <Link className="navbar-brand" to="/"><img alt="Brand" src="img/kg.png"/></Link>
               </div>
 
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -62,25 +62,25 @@ class App extends React.Component {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="kg">Die roten Jacken</a>
+                        <Link to="kg">Die roten Jacken</Link>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
-                        <a href="prinzengarde">Prinzengarde</a>
+                        <Link to="prinzengarde">Prinzengarde</Link>
                       </li>
                       <li>
-                        <a href="jugendgarde">Jungfunken</a>
+                        <Link to="jugendgarde">Jungfunken</Link>
                       </li>
                       <li>
-                        <a href="kleinefunken">Kleine Funken</a>
-                      </li>
-                      <li role="separator" className="divider"></li>
-                      <li>
-                        <a href="prinzenpaare">Prinzenpaare</a>
+                        <Link to="kleinefunken">Kleine Funken</Link>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
-                        <a href="vorstand">Vorstand</a>
+                        <Link to="prinzenpaare">Prinzenpaare</Link>
+                      </li>
+                      <li role="separator" className="divider"></li>
+                      <li>
+                        <Link to="vorstand">Vorstand</Link>
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
@@ -128,9 +128,5 @@ class App extends React.Component {
     );
   }
 }
-
-App.propTypes = {
-  //  children: PropTypes.object
-};
 
 export default App;

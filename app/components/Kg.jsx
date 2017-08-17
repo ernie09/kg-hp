@@ -13,7 +13,11 @@ class Kg extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Die roten Jacken'}/>
+        <Header titleText={'Die roten Jacken'}>
+          <span className="fkg fkg-narrenkappe" style={{
+            fontSize: '3em'
+          }}></span>
+        </Header>
         <section id="group">
           <div className="container">
             <div className="row">

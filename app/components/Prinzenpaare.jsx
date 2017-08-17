@@ -121,8 +121,11 @@ class Prinzenpaare extends Component {
 
     return (
       <div>
-        <Header titleText={'Prinzengallerie'} hrClassName="fkg fkg-narrenkappe"/>
-        <span className="fkg fkg-narrenkappe"></span>
+        <Header titleText={'Prinzengallerie'}>
+          <span className="fkg fkg-narrenkappe" style={{
+            fontSize: '3em'
+          }}></span>
+        </Header>
         <section id="senior">
           <h1><b>Prinzenpaare der KG</b></h1>
           <Carousel indicators={false} interval={null} activeIndex={this.state.seniorActiveYear - 1949} direction={this.state.seniorDirection} onSelect={this.handleSeniorChange}>
