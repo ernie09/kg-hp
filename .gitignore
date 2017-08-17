@@ -2,4 +2,6 @@ node_modules
 *.log
 .directory
 *.zip
-img/**
+*/img/**
+
+build/
