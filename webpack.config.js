@@ -12,13 +12,13 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'index.js',
+    publicPath: 'http://www.mir-hale-pool.de/'
   },
 
   devServer: {
     inline: true,
     host: '0.0.0.0',
     disableHostCheck: true,
-    historyApiFallback: true,
     contentBase: './app',
     port: 3000
   },

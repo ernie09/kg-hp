@@ -18,9 +18,9 @@ class Impressum extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h2>
-                  <strong>KG &quot;Mir hale Pool &quot;Verscheid 1929 e.V</strong>
-                </h2>
+                <h3>
+                  <strong>KG &quot;Mir hale Pool&quot; Verscheid 1929 e.V</strong>
+                </h3>
                 <p className="large">Vertreten durch:<br/>
                   Andreas Faust<br/>
                   Epgerterstr. 10 a<br/>

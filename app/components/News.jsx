@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
+import {Link} from 'react-router-dom';
 
 class News extends Component {
 
@@ -28,7 +29,11 @@ class News extends Component {
                 <h2 className="panel-title">Termine Session 2018</h2>
               </div>
               <div className="panel-body">
-                <p className="medium">Die Termine unserer Veranstaltungen der kommenden Session 2018 wurden festegelegt. <br/><a href="/termine" className="read-more">Lesen Sie hier</a></p>
+                <p className="medium">Die Termine unserer Veranstaltungen der kommenden Session 2018 wurden festgelegt. <br/>
+                <Link to="/termine" className="read-more">Lesen Sie hier</Link></p>
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 15.08.2017</strong></small>
               </div>
             </article>
 
@@ -56,38 +61,12 @@ class News extends Component {
                 <small><strong>Verscheid, 13.04.2017</strong></small>
               </div>
             </article>
-            {/*
-            <div className="separator text-muted">
-              <time>25. 3. 2015</time>
-            </div>
-
-            <article className="panel panel-success">
-
-              <div className="panel-heading icon">
-                <i className="glyphicon glyphicon-plus"></i>
-              </div>
-              <div className="panel-heading">
-                <h2 className="panel-title">New content added</h2>
-              </div>
-              <div className="panel-body">
-                Anything you can do with
-                <code>.panel</code>, can be done in timeline too!
-              </div>
-              <ul className="list-group">
-                <li className="list-group-item">Like</li>
-                <li className="list-group-item">list</li>
-                <li className="list-group-item">groups</li>
-                <li className="list-group-item">and</li>
-                <li className="list-group-item">tables</li>
-              </ul>
-            </article>
-            */}
             <article className="panel panel-danger panel-outline">
               <div className="panel-heading icon">
                 <i className="glyphicon glyphicon-info-sign"></i>
               </div>
               <div className="panel-body">
-                Mehr gibt es nicht zu berichten.
+                Mehr gibt es zur Zeit nicht zu berichten.
               </div>
             </article>
           </div>

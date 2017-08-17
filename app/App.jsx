@@ -93,7 +93,7 @@ class App extends React.Component {
                     </ul>
                   </li>
                   <li>
-                    <a href="https://sharegallery.strato.com/u/wjn-siq8/Ui-NJsqE">Bilder</a>
+                    <a href="https://sharegallery.strato.com/u/wjn-siq8/Ui-NJsqE" target="_blank" rel="noopener noreferrer">Bilder</a>
                   </li>
                   <li>
                     <Link to="contact">Kontakt</Link>
