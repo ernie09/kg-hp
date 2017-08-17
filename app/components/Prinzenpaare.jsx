@@ -57,7 +57,7 @@ class Prinzenpaare extends Component {
 
   generatePrinzText(ppItem, junior) {
     return ppItem.noPP ?
-      <p>Leider kein {!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} in diesem Jahr</p>:
+      <p>Leider gab es kein {!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} in diesem Jahr</p>:
       <p>Prinz {ppItem.nameMan} {ppItem.name ? '(' + ppItem.name + ')' : ''} {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
          Prinzessin {ppItem.woman} {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman ? ppItem.titleWoman : ''}</p>;
   }

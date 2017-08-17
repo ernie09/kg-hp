@@ -19,7 +19,7 @@ class Footer extends React.Component {
               <h3>Social Media</h3>
               <ul className="list-inline">
                 <li>
-                  <a href="https://www.facebook.com/KG-Mir-hale-Pool-Verscheid-eV-196287167052166/" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/KG-Mir-hale-Pool-Verscheid-eV-196287167052166/" target="_blank" rel="noopener noreferrer" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
                 </li>
               </ul>
             </div>
@@ -35,7 +35,7 @@ class Footer extends React.Component {
               <h3>Impressum</h3>
               <ul className="list-inline">
                 <li>
-                  <a href="./impressum.html" className="btn-social btn-outline" target="_blank"><i className="fa fa-fw fa-balance-scale"></i></a>
+                  <Link to="impressum" className="btn-social btn-outline"><i className="fa fa-fw fa-balance-scale"></i></Link>
                 </li>
               </ul>
             </div>
