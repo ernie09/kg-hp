@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Header from './Header.jsx';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class News extends Component {
 
@@ -21,6 +21,37 @@ class News extends Component {
           <div className="timeline">
             <div className="line text-muted"></div>
 
+
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-info-sign"></i>
+              </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Wandertag der KG</h2>
+              </div>
+              <div className="panel-body">
+                <p className="medium">
+                Am vergangenen Samstag trafen wir uns zu unserem diesjährigen Wandertag. Trotz des wechselhaften Wetters trafen sich zahlreiche Mitglieder beim Startpunkt „Paganetti´s Zur Erholung“ in Verscheid.<br />
+                Getreu dem diesjährigen Motto „Berg und Tal“ ging es zunächst über Hochscheid hinunter ins Elsbachtal. Nach einigen erholsamen Metern im Tal machte die Gruppe sich an den Anstieg in Richtung „Breitscheider Straße“. Diese Teilstrecke erforderte einen Zwischenstopp, sodass sich für den weiteren Weg gestärkt werden konnte.
+                Weiter ging‘s. Nach einem Abstecher über den ehemaligen „Trimm-Dich-Pfad“ führte die Wanderung hinunter nach Roßbach, wo im „Cafe Kröll“ eine weitere Rast eingelegt wurde.<br/>
+                Über Lache machten wir uns auf den Rückweg in Richtung Verscheid. Ein gemeinsames Abendessen im Vereinslokal war die Belohnung für die „Mühen des Tages“. Mitwanderer und „Nachzügler“ verbrachten noch weitere schöne Stunden im gastlichen „Paganetti´s“.<br/>
+                Allen Mitwanderern und besonders dem „Organisations-Team“ Claudia Wagner und Andreas Engel gilt ein „Dankeschön“ für den gelungenen Wandertag.<br/>
+                </p>
+                <figure>
+                  <img className="img-responsive img-rounded" src="img/wandertag/Gruppenphoto.png"/><br/>
+                </figure>
+                <figure>
+                  <img className="img-responsive img-rounded" src="img/wandertag/Bild_2.jpg"/><br/>
+                </figure>
+                <figure>
+                  <img className="img-responsive img-rounded" src="img/wandertag/Bild_1.jpg"/><br/>
+                </figure>
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 02.09.2017</strong></small>
+              </div>
+            </article>
+
             <article className="panel panel-danger">
               <div className="panel-heading icon">
                 <i className="glyphicon glyphicon-calendar"></i>
@@ -30,7 +61,7 @@ class News extends Component {
               </div>
               <div className="panel-body">
                 <p className="medium">Die Termine unserer Veranstaltungen der kommenden Session 2018 wurden festgelegt. <br/>
-                <Link to="/termine" className="read-more">Lesen Sie hier</Link></p>
+                  <Link to="/termine" className="read-more">Lesen Sie hier</Link></p>
               </div>
               <div className="panel-footer">
                 <small><strong>Verscheid, 15.08.2017</strong></small>
@@ -66,7 +97,7 @@ class News extends Component {
                 <i className="glyphicon glyphicon-info-sign"></i>
               </div>
               <div className="panel-body">
-                Mehr gibt es zur Zeit nicht zu berichten.
+                Start.
               </div>
             </article>
           </div>
