@@ -4,6 +4,10 @@ import Footer from './Footer.jsx';
 
 import { Carousel, Panel } from 'react-bootstrap';
 
+import seniorPp from '../img/prinzenpaare/1.JPG';
+import juniorPp from '../img/prinzenpaare/2.JPG';
+import bothPp from '../img/prinzenpaare/3.JPG';
+
 class Main extends Component {
 
   constructor() {
@@ -20,7 +24,7 @@ class Main extends Component {
         </Header>
         <Carousel indicators={false} interval={10000}>
           <Carousel.Item>
-            <img className="img-responsive carousel-image" src="img/prinzenpaare/1.JPG" />
+            <img className="img-responsive carousel-image" src={seniorPp} />
             <Carousel.Caption>
               <Panel header={<h3>Unser Prinzenpaar</h3>}>
                 Prinz Tobi I. von BMW bekannt,<br/>Prinzessin Marina II. aus dem Roßbe Land
@@ -28,7 +32,7 @@ class Main extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="img-responsive carousel-image" src="img/prinzenpaare/2.JPG" />
+            <img className="img-responsive carousel-image" src={juniorPp} />
             <Carousel.Caption>
               <Panel header={<h3>Unser Kinderprinzenpaar</h3>}>
                 Prinz Manuel I. ein flinker Fußballer der Borussia Dortmund liebt<br/>Prinzessin Chiara I. schwingt ihr Bein und schwimmt im DLRG-Verein
@@ -36,7 +40,7 @@ class Main extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="img-responsive carousel-image" src="img/prinzenpaare/3.JPG" alt="Slide3"/>
+            <img className="img-responsive carousel-image" src={bothPp} />
           </Carousel.Item>
         </Carousel>
         <Footer/>

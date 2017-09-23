@@ -20,6 +20,8 @@ import {Route, Switch, Link} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store/store';
 
+import kgImage from './img/kg.png';
+
 class App extends React.Component {
 
   constructor() {
@@ -40,7 +42,7 @@ class App extends React.Component {
                   Men&uuml;
                   <i className="fa fa-bars"></i>
                 </button>
-                <Link className="navbar-brand" to="/"><img alt="Brand" src="img/kg.png"/></Link>
+                <Link className="navbar-brand" to="/"><img alt="Brand" src={kgImage}/></Link>
               </div>
 
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

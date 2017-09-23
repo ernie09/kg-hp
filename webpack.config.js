@@ -53,9 +53,9 @@ module.exports = {
       test: /\.(woff|woff2|eot|ttf|svg)$/,
       loader: 'url-loader?limit=100000'
     }, {
-      test: /\.(jpe?g|png|gif)$/i,
+      test: /\.(jpe?g|JPE?G|png|gif)$/i,
       loaders: [
-        'file-loader?name=img/[name].[ext]',
+        'file-loader?name=img/[hash].[ext]',
         'image-webpack-loader'
       ]
     }]
