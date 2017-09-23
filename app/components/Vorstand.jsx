@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
-//import PropTypes from 'prop-types';
+
+import vorstandPlaceholder from '../img/vorstand/1.png';
 
 class Vorstand extends Component {
 
@@ -19,21 +20,21 @@ class Vorstand extends Component {
             <div className="row">
               <div className="col-md-4">
                 <div className="team-member">
-                  <img src="img/vorstand/1.png" className="img-responsive img-circle" alt=""/>
+                  <img src={vorstandPlaceholder} className="img-responsive img-circle" alt=""/>
                   <h4>Andreas Faust</h4>
                   <p>1. Vorsitzender</p>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="team-member">
-                  <img src="img/vorstand/2.png" className="img-responsive img-circle" alt=""/>
+                  <img src={vorstandPlaceholder} className="img-responsive img-circle" alt=""/>
                   <h4>Oliver Meier-Ronfeld</h4>
                   <p>Pr&auml;sident</p>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="team-member">
-                  <img src="img/vorstand/3.png" className="img-responsive img-circle" alt=""/>
+                  <img src={vorstandPlaceholder} className="img-responsive img-circle" alt=""/>
                   <h4>Andreas Engel</h4>
                   <p>Kassierer</p>
                 </div>
@@ -42,14 +43,14 @@ class Vorstand extends Component {
             <div className="row">
               <div className="col-md-6">
                 <div className="team-member">
-                  <img src="img/vorstand/4.png" className="img-responsive img-circle" alt=""/>
+                  <img src={vorstandPlaceholder} className="img-responsive img-circle" alt=""/>
                   <h4>Tobias Jost</h4>
                   <p>2. Vorsitzender</p>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="team-member">
-                  <img src="img/vorstand/5.png" className="img-responsive img-circle" alt=""/>
+                  <img src={vorstandPlaceholder} className="img-responsive img-circle" alt=""/>
                   <h4>Claudia Wagner</h4>
                   <p>Schriftf&uuml;hrerin</p>
                 </div>

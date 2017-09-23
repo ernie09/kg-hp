@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
-//import PropTypes from 'prop-types';
+import prinzengardeFoto from '../img/garden/Prinzengarde.jpg';
 
 class Prinzengarde extends Component {
 
@@ -18,7 +18,7 @@ class Prinzengarde extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <img src="img/garden/Prinzengarde.jpg" className="img-responsive" />
+                <img src={prinzengardeFoto} className="img-responsive" />
               </div>
             </div>
           </div>

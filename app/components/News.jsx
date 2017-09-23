@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import Header from './Header.jsx';
 import { Link } from 'react-router-dom';
 
+import vorstand from '../img/vorstand/VorstandKGVerscheid.jpg';
+import wt1 from '../img/wandertag/Gruppenphoto.png';
+import wt2 from '../img/wandertag/Bild_2.jpg';
+import wt3 from '../img/wandertag/Bild_1.jpg';
+
 class News extends Component {
 
   constructor() {
@@ -38,13 +43,13 @@ class News extends Component {
                 Allen Mitwanderern und besonders dem „Organisations-Team“ Claudia Wagner und Andreas Engel gilt ein „Dankeschön“ für den gelungenen Wandertag.<br/>
                 </p>
                 <figure>
-                  <img className="img-responsive img-rounded" src="img/wandertag/Gruppenphoto.png"/><br/>
+                  <img className="img-responsive img-rounded" src={wt1}/><br/>
                 </figure>
                 <figure>
-                  <img className="img-responsive img-rounded" src="img/wandertag/Bild_2.jpg"/><br/>
+                  <img className="img-responsive img-rounded" src={wt2}/><br/>
                 </figure>
                 <figure>
-                  <img className="img-responsive img-rounded" src="img/wandertag/Bild_1.jpg"/><br/>
+                  <img className="img-responsive img-rounded" src={wt3}/><br/>
                 </figure>
               </div>
               <div className="panel-footer">
@@ -78,7 +83,7 @@ class News extends Component {
               <div className="panel-body">
                 <h5>Neues im Vorstand - Freude über Mitgliederzuwachs</h5>
                 <figure>
-                  <img className="img-responsive img-rounded" src="img/vorstand/VorstandKGVerscheid.jpg"/><br/>
+                  <img className="img-responsive img-rounded" src={vorstand}/><br/>
                   <figcaption>Der neue Vorstand der KG (v.l.n.r): Andreas Faust, Oliver Meier-Ronfeld, Claudia Wagner, Tobias Jost, Andreas Engel, Andre Henn, Michael St&uuml;ber</figcaption>
                 </figure>
                 <br/>

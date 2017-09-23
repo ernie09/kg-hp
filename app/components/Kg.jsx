@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
-//import PropTypes from 'prop-types';
+import kg from '../img/kg/rotejacken.jpg';
 
 class Kg extends Component {
 
@@ -22,7 +22,7 @@ class Kg extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <img src="img/kg/rotejacken.jpg" className="img-responsive" />
+                <img src={kg} className="img-responsive" />
               </div>
             </div>
           </div>
