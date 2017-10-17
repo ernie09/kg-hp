@@ -6,6 +6,7 @@ import {Grid, Row, Col, Thumbnail} from 'react-bootstrap';
 import paganetti from '../img/sponsoren/logopaganetti1.gif';
 import elektroSiebenmorgen from '../img/sponsoren/elektroSiebenmorgen.png';
 import immoNeumann from '../img/sponsoren/neumann_immobilien_siebenmorgen_logo.jpg';
+import logoRheinChemo from '../img/sponsoren/Logo_RC_GmbH.png';
 
 class Sponsoren extends Component {
 
@@ -34,14 +35,14 @@ class Sponsoren extends Component {
             </Col>
             <Col xs={6} md={3}>
               <Thumbnail href="http://www.neumannimmo.de/" target="_blank" src={immoNeumann}>
-                <h5>neumann immobilien</h5>
+                <h5>Neumann Immobilien</h5>
               </Thumbnail>
             </Col>
-            {/*<Col xs={6} md={3}>
-              <Thumbnail href="#" alt="300x300" src="http://via.placeholder.com/300x300">
-                <h5>Firma 4</h5>
+            <Col xs={6} md={3}>
+              <Thumbnail href="http://www.rhein-chemotechnik.com/" target="_blank" src={logoRheinChemo}>
+                <h5>Rhein-Chemotechnik GmbH</h5>
               </Thumbnail>
-            </Col>*/}
+            </Col>
           </Row>
           {/*<Row>
             <Col xs={6} md={3}>
