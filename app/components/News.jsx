@@ -26,6 +26,21 @@ class News extends Component {
           <div className="timeline">
             <div className="line text-muted"></div>
 
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-calendar"></i>
+              </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Termin Kartenvorverkauf - Karten für Kappensitzung und Ü60-Sitzung 2018</h2>
+              </div>
+              <div className="panel-body">
+                <p className="medium">Karten für die Kappensitzung bzw. den Ü60-Karneval der Session 2018 können am <b>16.12.2017</b> ab <b>14:30</b> im <i>Gasthof Paganettis zur Erholung in Verscheid</i> erworben werden.<br/>
+                  <Link to="/termine" className="read-more">Sie auch hier</Link></p>
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 21.11.2017</strong></small>
+              </div>
+            </article>
 
             <article className="panel panel-danger">
               <div className="panel-heading icon">
