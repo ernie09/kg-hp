@@ -4,6 +4,8 @@ import Footer from './Footer.jsx';
 
 import { Carousel, Panel } from 'react-bootstrap';
 
+import LandingPageNews from './LandingPageNews.jsx';
+
 import seniorPp from '../img/prinzenpaare/1.JPG';
 import juniorPp from '../img/prinzenpaare/2.JPG';
 import bothPp from '../img/prinzenpaare/3.JPG';
@@ -13,7 +15,9 @@ class Main extends Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      printNews: true
+    };
   }
 
   render() {
@@ -22,6 +26,9 @@ class Main extends Component {
         <Header titleText={'"Mir hale Pool" Verscheid'} skillsText="3x Hüh'Scheldche Alaaf!" hrClassName="star-light">
           <p className="medium">Die Karnevalsgesellschaft &quot;Mir hale Pool&quot; Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
         </Header>
+        {
+          this.state.printNews ? <LandingPageNews /> : null
+        }
         <Carousel indicators={false} interval={10000}>
           <Carousel.Item>
             <img className="img-responsive carousel-image" src={seniorPp} />

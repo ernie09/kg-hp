@@ -6,6 +6,9 @@ import vorstand from '../img/vorstand/VorstandKGVerscheid.jpg';
 import wt1 from '../img/wandertag/Gruppenphoto.png';
 import wt2 from '../img/wandertag/Bild_2.jpg';
 import wt3 from '../img/wandertag/Bild_1.jpg';
+import termine2018 from '../img/plakate/2018-termine.png';
+import kv from '../img/plakate/2018-kv1.png';
+import ue60 from '../img/plakate/2018-kv2.png';
 
 class News extends Component {
 
@@ -19,12 +22,69 @@ class News extends Component {
     return (
       <div>
         <Header titleText={'News'} hrClassName="news-light">
-          <p>Bleiben Sie auf dem Laufenden!</p>
+          <p className="medium">Bleiben Sie auf dem Laufenden!</p>
         </Header>
 
         <section id="about">
           <div className="timeline">
             <div className="line text-muted"></div>
+
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-info-sign"></i>
+              </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Plakat - Kartenvorverkauf</h2>
+              </div>
+              <div className="panel-body">
+
+                <figure>
+                  <img className="img-responsive img-rounded" src={kv}/><br/>
+                </figure>
+
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 10.12.2017</strong></small>
+              </div>
+            </article>
+
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-info-sign"></i>
+              </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Plakat - &Uuml;60 - Sitzung</h2>
+              </div>
+              <div className="panel-body">
+
+                <figure>
+                  <img className="img-responsive img-rounded" src={ue60}/><br/>
+                </figure>
+
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 10.12.2017</strong></small>
+              </div>
+            </article>
+
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-info-sign"></i>
+              </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Plakat - Termine Session 2018</h2>
+              </div>
+              <div className="panel-body">
+
+                <figure>
+                  <img className="img-responsive img-rounded" src={termine2018}/><br/>
+                </figure>
+
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 10.12.2017</strong></small>
+              </div>
+            </article>
 
             <article className="panel panel-danger">
               <div className="panel-heading icon">
