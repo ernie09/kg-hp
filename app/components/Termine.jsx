@@ -35,7 +35,7 @@ class Termine extends Component {
                       <tr>
                         <td data-title="Tag">Sa.</td>
                         <td data-title="Datum">16.12.2017</td>
-                        <td data-title="Beginn">19:11 Uhr</td>
+                        <td data-title="Beginn">14:30 Uhr</td>
                         <td data-title="Veranstaltung">Kartenvorverkauf</td>
                         <td data-title="Ort"><a href="https://goo.gl/maps/4hD2zVyE94p"><i className="fa fa-home" aria-hidden="true"></i></a></td>
                       </tr>
