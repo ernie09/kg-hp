@@ -9,6 +9,7 @@ import LandingPageNews from './LandingPageNews.jsx';
 import seniorPp from '../img/prinzenpaare/1.JPG';
 import juniorPp from '../img/prinzenpaare/2.JPG';
 import bothPp from '../img/prinzenpaare/3.JPG';
+import weihnachtskarte from '../img/plakate/Weihnachtskarte_2017.png';
 
 class Main extends Component {
 
@@ -30,6 +31,9 @@ class Main extends Component {
           this.state.printNews ? <LandingPageNews /> : null
         }
         <Carousel indicators={false} interval={10000}>
+          <Carousel.Item>
+            <img className="img-responsive carousel-image" src={weihnachtskarte} />
+          </Carousel.Item>
           <Carousel.Item>
             <img className="img-responsive carousel-image" src={seniorPp} />
             <Carousel.Caption>
