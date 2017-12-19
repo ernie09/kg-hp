@@ -16,7 +16,7 @@ class Footer extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="footer-col col-md-4">
-              <h3>Social Media</h3>
+              <h3>Facebook</h3>
               <ul className="list-inline">
                 <li>
                   <a href="https://www.facebook.com/KG-Mir-hale-Pool-Verscheid-eV-196287167052166/" target="_blank" rel="noopener noreferrer" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>

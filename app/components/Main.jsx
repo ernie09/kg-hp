@@ -17,7 +17,7 @@ class Main extends Component {
     super();
 
     this.state = {
-      printNews: true
+      printNews: false
     };
   }
 

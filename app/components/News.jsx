@@ -34,12 +34,12 @@ class News extends Component {
                 <i className="glyphicon glyphicon-info-sign"></i>
               </div>
               <div className="panel-heading">
-                <h2 className="panel-title">Plakat - Kartenvorverkauf</h2>
+                <h2 className="panel-title">Plakat - Termine Session 2018</h2>
               </div>
               <div className="panel-body">
 
                 <figure>
-                  <img className="img-responsive img-rounded" src={kv}/><br/>
+                  <img className="img-responsive img-rounded" src={termine2018}/><br/>
                 </figure>
 
               </div>
@@ -72,12 +72,12 @@ class News extends Component {
                 <i className="glyphicon glyphicon-info-sign"></i>
               </div>
               <div className="panel-heading">
-                <h2 className="panel-title">Plakat - Termine Session 2018</h2>
+                <h2 className="panel-title">Plakat - Kartenvorverkauf</h2>
               </div>
               <div className="panel-body">
 
                 <figure>
-                  <img className="img-responsive img-rounded" src={termine2018}/><br/>
+                  <img className="img-responsive img-rounded" src={kv}/><br/>
                 </figure>
 
               </div>
