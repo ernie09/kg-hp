@@ -34,6 +34,21 @@ class News extends Component {
                 <i className="glyphicon glyphicon-info-sign"></i>
               </div>
               <div className="panel-heading">
+                <h2 className="panel-title">Karten Kappensitzung und Ü60-Sitzung</h2>
+              </div>
+              <div className="panel-body">
+                <p className="medium">Es gibt noch ein paar Restkarten für die Kappensitzung und die Ü60-Sitzung.<br /> Erhältlich bei Nah und Gut Geschull in Nassen.</p>
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 22.12.2017</strong></small>
+              </div>
+            </article>
+
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-info-sign"></i>
+              </div>
+              <div className="panel-heading">
                 <h2 className="panel-title">Plakat - Termine Session 2018</h2>
               </div>
               <div className="panel-body">
