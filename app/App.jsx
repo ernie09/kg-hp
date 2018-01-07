@@ -86,6 +86,10 @@ class App extends React.Component {
                       </li>
                       <li role="separator" className="divider"></li>
                       <li>
+                        <a href="/dl/Beitrittserklaerung-BeitragsEinzugsFormular_SEPA.pdf" target="_blank" rel="noopener noreferrer">Mitgliedsantrag</a>
+                      </li>
+                      <li role="separator" className="divider"></li>
+                      <li>
                         <Link to="history">Historie</Link>
                       </li>
                       <li role="separator" className="divider"></li>

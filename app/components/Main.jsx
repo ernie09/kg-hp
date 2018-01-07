@@ -31,9 +31,9 @@ class Main extends Component {
           this.state.printNews ? <LandingPageNews /> : null
         }
         <Carousel indicators={false} interval={10000}>
-          <Carousel.Item>
+          {/*<Carousel.Item>
             <img className="img-responsive carousel-image" src={weihnachtskarte} />
-          </Carousel.Item>
+          </Carousel.Item>*/}
           <Carousel.Item>
             <img className="img-responsive carousel-image" src={seniorPp} />
             <Carousel.Caption>
