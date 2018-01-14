@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-
+import MediaQuery from 'react-responsive';
 import { Carousel, Panel } from 'react-bootstrap';
 
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 import LandingPageNews from './LandingPageNews.jsx';
 
-import seniorPp from '../img/prinzenpaare/1.JPG';
-import juniorPp from '../img/prinzenpaare/2.JPG';
-import bothPp from '../img/prinzenpaare/3.JPG';
-import weihnachtskarte from '../img/plakate/Weihnachtskarte_2017.png';
+import dreiGS from '../img/prinzenpaare/DreiGS_2018.JPG';
 
 class Main extends Component {
 
@@ -22,6 +19,12 @@ class Main extends Component {
   }
 
   render() {
+    const captionPanel =
+      <Panel bsStyle="danger" header={<h3>Unser Dreigestirn</h3>}>
+        <b>Prinz Karin I.</b> aus dem Scheldchesland, auf der Hüh auch als Prinzessin bekannt,<br/>
+        <b>Prinzessin Doris II.</b> deren Hobby Line Dance ist, worüber sie trotzdem nie die Möhnen vergisst,<br/>
+        <b>Bauer Iris I.</b> jeck bekannt, hier und im ganzen Scheldchesland.
+      </Panel>;
     return (
       <div>
         <Header titleText={'"Mir hale Pool" Verscheid'} skillsText="3x Hüh'Scheldche Alaaf!" hrClassName="star-light">
@@ -35,14 +38,14 @@ class Main extends Component {
             <img className="img-responsive carousel-image" src={weihnachtskarte} />
           </Carousel.Item>*/}
           <Carousel.Item>
-            <img className="img-responsive carousel-image" src={seniorPp} />
-            <Carousel.Caption>
-              <Panel header={<h3>Unser Prinzenpaar</h3>}>
-                Prinz Tobi I. von BMW bekannt,<br/>Prinzessin Marina II. aus dem Roßbe Land
-              </Panel>
-            </Carousel.Caption>
+            <img className="img-responsive carousel-image" src={dreiGS} />
+            <MediaQuery query="(min-device-width: 1224px)">
+              <Carousel.Caption>
+                {captionPanel}
+              </Carousel.Caption>
+            </MediaQuery>
           </Carousel.Item>
-          <Carousel.Item>
+          {/*<Carousel.Item>
             <img className="img-responsive carousel-image" src={juniorPp} />
             <Carousel.Caption>
               <Panel header={<h3>Unser Kinderprinzenpaar</h3>}>
@@ -53,7 +56,12 @@ class Main extends Component {
           <Carousel.Item>
             <img className="img-responsive carousel-image" src={bothPp} />
           </Carousel.Item>
+          */}
         </Carousel>
+        <br></br>
+        <MediaQuery query="(max-device-width: 1224px)">
+          {captionPanel}
+        </MediaQuery>
         <Footer/>
       </div>
     );
