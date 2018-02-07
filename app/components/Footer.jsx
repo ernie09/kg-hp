@@ -46,7 +46,7 @@ class Footer extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12">
-              Copyright &copy; KG &quot;Mir hale Pool&quot; Verscheid ( 2017 )
+              Copyright &copy; KG &quot;Mir hale Pool&quot; Verscheid ( 2018 )
             </div>
           </div>
         </div>
