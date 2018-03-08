@@ -5,6 +5,8 @@ var CompressionPlugin = require('compression-webpack-plugin');
 
 var prodConfig = Object.assign({}, devConfig);
 
+prodConfig.mode = 'production';
+
 prodConfig.plugins.push(
   new webpack.DefinePlugin({
     'process.env': {

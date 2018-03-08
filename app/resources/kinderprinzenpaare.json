@@ -221,5 +221,8 @@
     "titleMan": "ein flinker Fußballer der Borussia Dortmund liebt",
     "titleWoman": "schwingt ihr Bein und schwimmt im DLRG-Verein",
     "active": true
+  },
+  "2018": {
+    "noPP": true
   }
 }
