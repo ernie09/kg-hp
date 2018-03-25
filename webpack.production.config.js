@@ -5,6 +5,11 @@ var CompressionPlugin = require('compression-webpack-plugin');
 
 var prodConfig = Object.assign({}, devConfig);
 
+prodConfig.mode = 'production';
+prodConfig.optimization = {
+  minimize: true
+};
+
 prodConfig.plugins.push(
   new webpack.DefinePlugin({
     'process.env': {
@@ -14,20 +19,6 @@ prodConfig.plugins.push(
   new CopyWebpackPlugin([{
     from: 'app/index.html'
   }]),
-  new webpack.optimize.UglifyJsPlugin({
-    sourceMap: 'source-map',
-    mangle: true,
-    compress: {
-      warnings: false,
-      pure_getters: true,
-      unsafe: true,
-      unsafe_comps: true,
-      screw_ie8: true
-    },
-    output: {
-      comments: false,
-    }
-  }),
   new webpack.optimize.AggressiveMergingPlugin(),
   new CompressionPlugin({
     asset: '[path].gz[query]',

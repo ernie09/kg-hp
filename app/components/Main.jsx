@@ -20,10 +20,15 @@ class Main extends Component {
 
   render() {
     const captionPanel =
-      <Panel bsStyle="danger" header={<h3>Unser Dreigestirn</h3>}>
-        <b>Prinz Karin I.</b> aus dem Scheldchesland, auf der Hüh auch als Prinzessin bekannt,<br/>
-        <b>Prinzessin Doris II.</b> deren Hobby Line Dance ist, worüber sie trotzdem nie die Möhnen vergisst,<br/>
-        <b>Bauer Iris I.</b> jeck bekannt, hier und im ganzen Scheldchesland.
+      <Panel bsStyle="danger">
+        <Panel.Heading>
+          <Panel.Title componentClass="h3">Unser Dreigestirn</Panel.Title>
+        </Panel.Heading>
+        <Panel.Body>
+          <b>Prinz Karin I.</b> aus dem Scheldchesland, auf der Hüh auch als Prinzessin bekannt,<br/>
+          <b>Prinzessin Doris II.</b> deren Hobby Line Dance ist, worüber sie trotzdem nie die Möhnen vergisst,<br/>
+          <b>Bauer Iris I.</b> jeck bekannt, hier und im ganzen Scheldchesland.
+        </Panel.Body>
       </Panel>;
     return (
       <div>
