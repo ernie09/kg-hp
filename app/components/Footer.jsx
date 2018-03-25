@@ -19,7 +19,7 @@ class Footer extends React.Component {
               <h3>Facebook</h3>
               <ul className="list-inline">
                 <li>
-                  <a href="https://www.facebook.com/KG-Mir-hale-Pool-Verscheid-eV-196287167052166/" target="_blank" rel="noopener noreferrer" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/MirHalePool/" target="_blank" rel="noopener noreferrer" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
                 </li>
               </ul>
             </div>
