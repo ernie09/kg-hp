@@ -3,7 +3,6 @@ import MediaQuery from 'react-responsive';
 import { Carousel, Panel } from 'react-bootstrap';
 
 import Header from './Header.jsx';
-import Footer from './Footer.jsx';
 import LandingPageNews from './LandingPageNews.jsx';
 
 import dreiGS from '../img/prinzenpaare/DreiGS_2018.JPG';
@@ -67,7 +66,6 @@ class Main extends Component {
         <MediaQuery query="(max-device-width: 1224px)">
           {captionPanel}
         </MediaQuery>
-        <Footer/>
       </div>
     );
   }
