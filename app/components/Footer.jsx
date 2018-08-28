@@ -9,9 +9,13 @@ class Footer extends React.Component {
     this.state = {};
   }
 
-  // target="_blank"
   render() {
     return <footer className="text-center">
+      <hr style={{
+        width: '90%',
+        border: '1px solid #A9443E',
+        borderRadius: 9
+      }} />
       <div className="footer-above">
         <div className="container-fluid">
           <div className="row">

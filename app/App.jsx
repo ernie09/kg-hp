@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Main from './components/Main.jsx';
-import Kontakt from './components/Kontakt.jsx';
+import Footer from './components/Footer.jsx';
 import Impressum from './components/Impressum.jsx';
 import News from './components/News.jsx';
 import Historie from './components/Historie.jsx';
@@ -14,6 +14,7 @@ import KleineFunken from './components/KleineFunken.jsx';
 import Prinzenpaare from './components/Prinzenpaare.jsx';
 import Vorstand from './components/Vorstand.jsx';
 import Sponsoren from './components/Sponsoren.jsx';
+import Datenschutzerklaerung from './components/Datenschutzerklaerung.jsx';
 
 import {Route, Switch, Link} from 'react-router-dom';
 
@@ -27,10 +28,19 @@ class App extends React.Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      cookiesAccepted: false
+    };
+  }
+
+  acceptCookies = () => {
+    this.setState({
+      cookiesAccepted: true
+    });
   }
 
   render() {
+    const { cookiesAccepted } = this.state;
     return (
       <Provider store={store}>
         <div>
@@ -85,10 +95,10 @@ class App extends React.Component {
                         <Link to="vorstand">Vorstand</Link>
                       </li>
                       <li role="separator" className="divider"></li>
-                      <li>
+                      {/* <li>
                         <a href="/dl/Beitrittserklaerung-BeitragsEinzugsFormular_SEPA.pdf" target="_blank" rel="noopener noreferrer">Mitgliedsantrag</a>
-                      </li>
-                      <li role="separator" className="divider"></li>
+                      </li> */}
+                      {/* <li role="separator" className="divider"></li> */}
                       <li>
                         <Link to="history">Historie</Link>
                       </li>
@@ -98,15 +108,18 @@ class App extends React.Component {
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="https://sharegallery.strato.com/pages/kgverscheid#zug-verscheid-1/photos/fluid" target="_blank" rel="noopener noreferrer">Bilder</a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link to="contact">Kontakt</Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link to="impressum">Impressum</Link>
+                    <Link to="datenschutz">Datenschutz</Link>
                   </li>
+                  {/* <li>
+                    <Link to="impressum">Impressum</Link>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -126,10 +139,20 @@ class App extends React.Component {
               <Route exact path="/history" component={Historie}/>
               <Route exact path="/sponsoren" component={Sponsoren}/>
               <Route exact path="/impressum" component={Impressum}/>
-              <Route exact path="/contact" component={Kontakt}/>
+              {/* <Route exact path="/contact" component={Kontakt}/> */}
+              <Route exact path="/datenschutz" component={Datenschutzerklaerung} />
             </Switch>
+            <div id="cookie-law-info-bar" style={{
+              display: !cookiesAccepted ? 'block' : 'none'
+            }}>
+              <span>Diese Website benutzt Cookies </span>
+              <Link to="datenschutz">(Weitere Informationen)</Link>
+              <span>. Wenn Sie die Webseite weiter nutzen, gehen wir von ihrem Einverständnis aus.</span> 
+              <button onClick={this.acceptCookies} className="btn btn-danger btn-xs" >OK</button>
+            </div>
           </div>
-        </div>
+          <Footer />
+        </div>        
       </Provider>
     );
   }
