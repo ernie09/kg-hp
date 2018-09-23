@@ -6,6 +6,11 @@ import vorstand from '../img/vorstand/VorstandKGVerscheid.jpg';
 import wt1 from '../img/wandertag/Gruppenphoto.png';
 import wt2 from '../img/wandertag/Bild_2.jpg';
 import wt3 from '../img/wandertag/Bild_1.jpg';
+
+import wt20181 from '../img/wandertag/2018/Wanderung.jpg';
+import wt20182 from '../img/wandertag/2018/Gruppenbild.jpg';
+import wt20183 from '../img/wandertag/2018/Kneipe.jpg';
+
 import termine2018 from '../img/plakate/2018-Prinzenpost-A4-kg-Verscheid.png';
 import kv from '../img/plakate/2018-kv1.png';
 import ue60 from '../img/plakate/2018-kv2.png';
@@ -31,6 +36,36 @@ class News extends Component {
         <section id="about">
           <div className="timeline">
             <div className="line text-muted"></div>
+
+            <article className="panel panel-danger">
+              <div className="panel-heading icon">
+                <i className="glyphicon glyphicon-info-sign"></i>
+              </div>
+              <div className="panel-heading">
+                <h2 className="panel-title">Wandertag 2018 der KG</h2>
+              </div>
+              <div className="panel-body">
+                <p className="medium">
+                 Am Samstag, den 15.09.2018, unternahm die KG &quot;Mir hale Pool&quot; Verscheid ihren diesjährigen Wandertag. Bei angenehmem Spätsommerwetter trafen sich zahlreiche Mitglieder am Dorfplatz in Hollig, dem diesjährigen Startpunkt.<br/>
+                 Von dort ging es zunächst hinunter ins Fockenbachtal. Der Weg führte die Gruppe danach zur Hümmericher Mühle, wo bei einem ersten Zwischenstopp die Akkus für den anschließenden Anstieg nach Hümmerich gefüllt wurden.
+                 Weiter ging‘s den Berg hinauf nach Hümmerich, wo ein Besuch im Gasthof Dreydoppel auf dem Plan stand.<br />
+                 Das letzte Teilstück der Wanderung führte nach Krunkel. In diesem Jahr endete die Tour im Gasthof Eberz - &quot;beim Gertrud&quot;. Nach einem deftigen, liebevoll hergerichteten Abendessen verweilten Mitwanderer und &quot;Nachzügler&quot; begleitet von Evergreens aus der Jukebox noch einige schöne Stunden in der beliebten Dorfkneipe. <br />
+                 Allen Mitwanderern und besonders dem &quot;Organisations-Team&quot; Erich Engel und Wolfgang Rüth gilt ein Dankeschön für den gelungenen Wandertag.
+                </p>
+                <figure>
+                  <img className="img-responsive img-rounded" src={wt20181} /><br />
+                </figure>
+                <figure>
+                  <img className="img-responsive img-rounded" src={wt20182} /><br />
+                </figure>
+                <figure>
+                  <img className="img-responsive img-rounded" src={wt20183} /><br />
+                </figure>
+              </div>
+              <div className="panel-footer">
+                <small><strong>Verscheid, 23.09.2018</strong></small>
+              </div>
+            </article>
 
             <article className="panel panel-danger">
               <div className="panel-heading icon">
