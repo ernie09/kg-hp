@@ -43,7 +43,7 @@ Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer nationa
                     <li>
                       <p className="large">
                         <i className="fa fa-envelope-o fa-fw"></i>
-                        <a href="mailto:KG-Mir-hale-Pool-eV@t-online.de">KG-Mir-hale-Pool-eV@t-online.de</a>
+                        <a href="mailto:info@mir-hale-pool.de">info@mir-hale-pool.de</a>
                       </p>
                     </li>
                     <li>
@@ -238,10 +238,10 @@ Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d.
                 Widersprechen Sie der Verarbeitung für Zwecke der Direktwerbung, so werden die Sie betreffenden personenbezogenen Daten nicht mehr für diese Zwecke verarbeitet.
                 Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft – ungeachtet der Richtlinie 2002/58/EG – Ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.
                   </li>
-                  <li>Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung:<br/>
+                  <li>Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung:<br />
                   Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
                   </li>
-                  <li>Automatisierte Entscheidung im Einzelfall einschließlich Profiling:<br/>
+                  <li>Automatisierte Entscheidung im Einzelfall einschließlich Profiling:<br />
                     Sie haben das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt.
                   
                 Dies gilt nicht, wenn die Entscheidung:

@@ -204,7 +204,11 @@
     "noPP": true
   },
   "2014": {
-    "noPP": true
+    "nameMan": "Mirco (Charvat)",
+    "numMan": 1,
+    "woman": "Annalie (Lenz)",
+    "numWoman": 1,
+    "active": false
   },
   "2015": {
     "noPP": true

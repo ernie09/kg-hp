@@ -23,7 +23,7 @@ class LandingPageNews extends Component {
               <div className="bs-callout bs-callout-default">
                 <h3>Kartenvorverkauf für Kappensitzung und Ü60-Sitzung</h3>
                 <p>Am kommenden Samstag (16.12.2018, 14:30) ist der Vorverkauf für unsere Kappensitzung sowie unsere Ü60-Sitzung.
-                  <br/><Link to="/news" className="read-more">Die Plakate finden Sie hier</Link>
+                  <br /><Link to="/news" className="read-more">Die Plakate finden Sie hier</Link>
                 </p>
               </div>
             </div>

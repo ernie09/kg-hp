@@ -13,7 +13,7 @@ class Kappensitzung extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Kappensitzung'}/>
+        <Header titleText={'Kappensitzung'} />
       </div>
     );
   }

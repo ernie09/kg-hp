@@ -21,12 +21,18 @@ import {Route, Switch, Link} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store/store';
 
-import kgImage from './img/kg.png';
+import kgImage from './img/out2.png';
 
+/**
+ *
+ */
 class App extends React.Component {
 
-  constructor() {
-    super();
+  /**
+   * The default constructor
+   */
+  constructor(props) {
+    super(props);
 
     this.state = {
       cookiesAccepted: false
@@ -39,6 +45,9 @@ class App extends React.Component {
     });
   }
 
+  /**
+   * The render function
+   */
   render() {
     const { cookiesAccepted } = this.state;
     return (
@@ -52,7 +61,7 @@ class App extends React.Component {
                   Men&uuml;
                   <i className="fa fa-bars"></i>
                 </button>
-                <Link className="navbar-brand" to="/"><img alt="Brand" src={kgImage}/></Link>
+                <Link className="navbar-brand" to="/"><img alt="Brand" src={kgImage} /></Link>
               </div>
 
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -126,19 +135,19 @@ class App extends React.Component {
           </nav>
           <div className="container-fluid">
             <Switch>
-              <Route exact path="/" component={Main}/>
-              <Route exact path="/news" component={News}/>
-              <Route exact path="/kappensitzung" component={Kappensitzung}/>
-              <Route exact path="/termine" component={Termine}/>
-              <Route exact path="/kg" component={Kg}/>
-              <Route exact path="/prinzengarde" component={Prinzengarde}/>
-              <Route exact path="/jugendgarde" component={Jugendgarde}/>
-              <Route exact path="/kleinefunken" component={KleineFunken}/>
-              <Route exact path="/prinzenpaare" component={Prinzenpaare}/>
-              <Route exact path="/vorstand" component={Vorstand}/>
-              <Route exact path="/history" component={Historie}/>
-              <Route exact path="/sponsoren" component={Sponsoren}/>
-              <Route exact path="/impressum" component={Impressum}/>
+              <Route exact path="/" component={Main} />
+              <Route exact path="/news" component={News} />
+              <Route exact path="/kappensitzung" component={Kappensitzung} />
+              <Route exact path="/termine" component={Termine} />
+              <Route exact path="/kg" component={Kg} />
+              <Route exact path="/prinzengarde" component={Prinzengarde} />
+              <Route exact path="/jugendgarde" component={Jugendgarde} />
+              <Route exact path="/kleinefunken" component={KleineFunken} />
+              <Route exact path="/prinzenpaare" component={Prinzenpaare} />
+              <Route exact path="/vorstand" component={Vorstand} />
+              <Route exact path="/history" component={Historie} />
+              <Route exact path="/sponsoren" component={Sponsoren} />
+              <Route exact path="/impressum" component={Impressum} />
               {/* <Route exact path="/contact" component={Kontakt}/> */}
               <Route exact path="/datenschutz" component={Datenschutzerklaerung} />
             </Switch>
@@ -147,12 +156,12 @@ class App extends React.Component {
             }}>
               <span>Diese Website benutzt Cookies </span>
               <Link to="datenschutz">(Weitere Informationen)</Link>
-              <span>. Wenn Sie die Webseite weiter nutzen, gehen wir von ihrem Einverständnis aus.</span> 
+              <span>. Wenn Sie die Webseite weiter nutzen, gehen wir von ihrem Einverständnis aus.</span>
               <button onClick={this.acceptCookies} className="btn btn-danger btn-xs" >OK</button>
             </div>
           </div>
           <Footer />
-        </div>        
+        </div>
       </Provider>
     );
   }
