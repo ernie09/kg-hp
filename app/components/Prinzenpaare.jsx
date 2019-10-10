@@ -23,8 +23,8 @@ class Prinzenpaare extends Component {
     junior: PropTypes.object
   };
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       seniorActiveYear: 2017,
@@ -32,10 +32,8 @@ class Prinzenpaare extends Component {
       juniorActiveYear: 2017,
       juniorDirection: null
     };
-  }
-
-  componentWillMount() {
-    const { dispatch } = this.props;
+  
+    const { dispatch } = props;
     fetch('/resources/prinzenpaare.json')
       .then(response => response.json())
       .then(response => dispatch(loadPPSenior(response)));
@@ -49,28 +47,28 @@ class Prinzenpaare extends Component {
     if (imageUrl) {
       return <img style={{
         margin: 'auto'
-      }} src={imageUrl}/>;
+      }} src={imageUrl} />;
     } else {
       return <img style={{
         margin: 'auto'
-      }} src="http://via.placeholder.com/500x500"/>;
+      }} src="http://via.placeholder.com/500x500" />;
     }
   }
 
   generatePrinzText = (ppItem, junior) => {
     return ppItem.noPP ?
-      <p>Leider gab es kein {!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} in diesem Jahr</p>:
-      <p>Prinz {ppItem.nameMan} {ppItem.name ? '(' + ppItem.name + ')' : ''} {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br/>
+      <p>Leider gab es kein {!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'} in diesem Jahr</p> :
+      <p>Prinz {ppItem.nameMan} {ppItem.name ? '(' + ppItem.name + ')' : ''} {mapNumericalToRoman(ppItem.numMan)}. {ppItem.titleMan ? ppItem.titleMan : ''},<br />
          Prinzessin {ppItem.woman} {mapNumericalToRoman(ppItem.numWoman)}. {ppItem.titleWoman ? ppItem.titleWoman : ''}</p>;
   }
 
   createCarouselItem = (ppItem, year, junior) => {
-    let itm = <Carousel.Item key={!junior ? 'Prinzenpaar'+year : 'Kinderprinzenpaar'+year}>
+    const itm = <Carousel.Item key={!junior ? 'Prinzenpaar' + year : 'Kinderprinzenpaar' + year}>
       { this.createImage(ppItem.picture) }
       <Carousel.Caption>
         <Panel bsStyle="danger">
           <Panel.Heading>
-            <Panel.Title componentClass="h3">{!junior ? 'Prinzenpaar' : 'Kinderprinzenpaar'}</Panel.Title>
+            <Panel.Title componentClass="h3">{!junior ? `Prinzenpaar ${year}` : `Kinderprinzenpaar ${year}`}</Panel.Title>
           </Panel.Heading>
           <Panel.Body>
             {
@@ -104,15 +102,15 @@ class Prinzenpaare extends Component {
     } = this.props;
 
     if (!senior && !junior) {
-      return <div/>;
+      return <div />;
     }
 
     if (!senior || (senior && senior.length === 0)) {
-      return <div/>;
+      return <div />;
     }
 
     if (!junior || (junior && junior.length === 0)) {
-      return <div/>;
+      return <div />;
     }
 
     let seniorItems = [];

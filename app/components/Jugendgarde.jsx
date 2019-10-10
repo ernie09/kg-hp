@@ -1,19 +1,27 @@
-import React, {Component} from 'react';
+import React, { PureComponent } from 'react';
 import Header from './Header.jsx';
-//import PropTypes from 'prop-types';
+import jfFoto from '../img/garden/jf.jpeg';
 
-class Jugendgarde extends Component {
+class Jugendgarde extends PureComponent {
 
   constructor() {
     super();
-
-    this.state = {};
   }
 
   render() {
     return (
       <div>
-        <Header titleText={'Jungfunken'}/>
+        <Header titleText={'Jungfunken'} />
+        <section id="group">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <img src={jfFoto} className="img-responsive" />
+          Die Jungfunken bei einem Gastauftritt in Kurtscheid.
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }

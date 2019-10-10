@@ -5,7 +5,11 @@ import { Carousel, Panel } from 'react-bootstrap';
 import Header from './Header.jsx';
 import LandingPageNews from './LandingPageNews.jsx';
 
-import dreiGS from '../img/prinzenpaare/DreiGS_2018.JPG';
+import jubiPP from '../img/prinzenpaare/Senior2019.JPG';
+import kinderprinzessin2019 from '../img/prinzenpaare/KPP_2019.JPG';
+import gemeinsam2019 from '../img/prinzenpaare/PP_2019_beide.JPG';
+import jubiPP2 from '../img/prinzenpaare/senior/2019.jpg';
+import kinderPP2 from '../img/prinzenpaare/junior/2019.png';
 
 class Main extends Component {
 
@@ -21,12 +25,21 @@ class Main extends Component {
     const captionPanel =
       <Panel bsStyle="danger">
         <Panel.Heading>
-          <Panel.Title componentClass="h3">Unser Dreigestirn</Panel.Title>
+          <Panel.Title componentClass="h3">Unser Jubiläumsprinzenpaar</Panel.Title>
         </Panel.Heading>
         <Panel.Body>
-          <b>Prinz Karin I.</b> aus dem Scheldchesland, auf der Hüh auch als Prinzessin bekannt,<br/>
-          <b>Prinzessin Doris II.</b> deren Hobby Line Dance ist, worüber sie trotzdem nie die Möhnen vergisst,<br/>
-          <b>Bauer Iris I.</b> jeck bekannt, hier und im ganzen Scheldchesland.
+          <b>Prinz Axel I.</b> von Eis und Schnee,<br />
+          <b>Prinzessin Petra II.</b> von Kindergeschrei und Malerei
+        </Panel.Body>
+      </Panel>;
+
+    const captionPanelKp =
+      <Panel bsStyle="danger">
+        <Panel.Heading>
+          <Panel.Title componentClass="h3">Unsere Jubiläumskinderprinzessin</Panel.Title>
+        </Panel.Heading>
+        <Panel.Body>
+          <b>Prinzessin Finja I.</b> von Waßerburg und Schloß, dieses Jahr ist sie allein der Boss.
         </Panel.Body>
       </Panel>;
     return (
@@ -42,29 +55,37 @@ class Main extends Component {
             <img className="img-responsive carousel-image" src={weihnachtskarte} />
           </Carousel.Item>*/}
           <Carousel.Item>
-            <img className="img-responsive carousel-image" src={dreiGS} />
+            <img className="img-responsive carousel-image" src={jubiPP} />
             <MediaQuery query="(min-device-width: 1224px)">
               <Carousel.Caption>
                 {captionPanel}
               </Carousel.Caption>
             </MediaQuery>
           </Carousel.Item>
-          {/*<Carousel.Item>
-            <img className="img-responsive carousel-image" src={juniorPp} />
-            <Carousel.Caption>
-              <Panel header={<h3>Unser Kinderprinzenpaar</h3>}>
-                Prinz Manuel I. ein flinker Fußballer der Borussia Dortmund liebt<br/>Prinzessin Chiara I. schwingt ihr Bein und schwimmt im DLRG-Verein
-              </Panel>
-            </Carousel.Caption>
+          <Carousel.Item>
+            <img className="img-responsive carousel-image" src={kinderprinzessin2019} />
+            <MediaQuery query="(min-device-width: 1224px)">
+              <Carousel.Caption>
+                {captionPanelKp}
+              </Carousel.Caption>
+            </MediaQuery>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="img-responsive carousel-image" src={bothPp} />
+            <img className="img-responsive carousel-image" src={gemeinsam2019} />
           </Carousel.Item>
-          */}
+          <Carousel.Item>
+            <img className="img-responsive carousel-image" src={jubiPP2} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="img-responsive carousel-image" src={kinderPP2} />
+          </Carousel.Item>
         </Carousel>
         <br></br>
         <MediaQuery query="(max-device-width: 1224px)">
           {captionPanel}
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 1224px)">
+          {captionPanelKp}
         </MediaQuery>
       </div>
     );

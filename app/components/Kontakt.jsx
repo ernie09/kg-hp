@@ -13,7 +13,7 @@ class Kontakt extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Kontakt'}/>
+        <Header titleText={'Kontakt'} />
         <section id="kontakt">
           <div className="container-fluid">
             <div className="row">
@@ -21,9 +21,9 @@ class Kontakt extends Component {
                 <h3>
                   <strong>KG &quot;Mir hale Pool &quot;Verscheid 1929 e.V</strong>
                 </h3>
-                <p className="large">Vertreten durch:<br/>
-                  Andreas Faust<br/>
-                  Epgerterstr. 10 a<br/>
+                <p className="large">Vertreten durch:<br />
+                  Andreas Faust<br />
+                  Epgerterstr. 10 a<br />
                   53547 Dasbach</p>
                 <ul className="list-unstyled">
                   <li>
@@ -34,7 +34,7 @@ class Kontakt extends Component {
                   <li>
                     <p className="large">
                       <i className="fa fa-envelope-o fa-fw"></i>
-                      <a href="mailto:KG-Mir-hale-Pool-eV@t-online.de">KG-Mir-hale-Pool-eV@t-online.de</a>
+                      <a href="mailto:info@mir-hale-pool.de">info@mir-hale-pool.de</a>
                     </p>
                   </li>
                 </ul>

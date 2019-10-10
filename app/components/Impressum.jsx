@@ -13,7 +13,7 @@ class Impressum extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Impressum'}/>
+        <Header titleText={'Impressum'} />
         <section id="impressum">
           <div className="container-fluid">
             <div className="row">
@@ -21,9 +21,9 @@ class Impressum extends Component {
                 <h3>
                   <strong>KG &quot;Mir hale Pool&quot; Verscheid 1929 e.V</strong>
                 </h3>
-                <p className="large">Vertreten durch:<br/>
-                  Andreas Faust<br/>
-                  Epgerterstr. 10 a<br/>
+                <p className="large">Vertreten durch:<br />
+                  Andreas Faust<br />
+                  Epgerterstr. 10 a<br />
                   53547 Dasbach</p>
                 <ul className="list-unstyled">
                   <li>
@@ -34,14 +34,14 @@ class Impressum extends Component {
                   <li>
                     <p className="large">
                       <i className="fa fa-envelope-o fa-fw"></i>
-                      <a href="mailto:KG-Mir-hale-Pool-eV@t-online.de">KG-Mir-hale-Pool-eV@t-online.de</a>
+                      <a href="mailto:info@mir-hale-pool.de">info@mir-hale-pool.de</a>
                     </p>
                   </li>
                 </ul>
                 <h3>
                   <strong>Eingetragen im Vereinsregister:</strong>
                 </h3>
-                <p className="large">Vereinsregister-Nr&nbsp; VR 11172<br/>
+                <p className="large">Vereinsregister-Nr&nbsp; VR 11172<br />
                   Gericht: Amtsgericht Montabaur</p>
                 <ul className="list-group text-left">
                   <li className="list-group-item">
@@ -57,7 +57,7 @@ class Impressum extends Component {
                   </li>
                   <li className="list-group-item">
                     <h3>3. Urheber- und Leistungsschutzrechte</h3>
-                    <p className="medium">Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.<br/>
+                    <p className="medium">Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.<br />
                       Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.</p>
                   </li>
                   <li className="list-group-item">

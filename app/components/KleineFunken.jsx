@@ -13,7 +13,7 @@ class KleineFunken extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Kleine Funken'}/>
+        <Header titleText={'Kleine Funken'} />
         <section id="group">
           <div className="container">
             <div className="row">

@@ -19,8 +19,8 @@ class Sponsoren extends Component {
   render() {
     return (
       <div>
-        <Header titleText={'Sponsoren'}/>
-        <br/>
+        <Header titleText={'Sponsoren'} />
+        <br />
         <Grid>
           <Row>
             <Col xs={6} md={3}>

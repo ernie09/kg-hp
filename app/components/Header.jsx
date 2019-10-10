@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-class Header extends Component {
+class Header extends PureComponent {
 
   constructor() {
     super();
-
-    this.state = {};
   }
 
   render() {
@@ -20,7 +18,7 @@ class Header extends Component {
                 this.props.skillsText ? <span className="skills">{this.props.skillsText}</span> : undefined
               }
               {
-                this.props.hrClassName ? <hr className={this.props.hrClassName}/> : undefined
+                this.props.hrClassName ? <hr className={this.props.hrClassName} /> : undefined
               }
               { this.props.children }
             </div>

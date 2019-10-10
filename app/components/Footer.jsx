@@ -31,7 +31,7 @@ class Footer extends React.Component {
               <h3>Email</h3>
               <ul className="list-inline">
                 <li>
-                  <a href="mailto:KG-Mir-hale-Pool-eV@t-online.de?Subject=Frage%20an%20die%20KG%20%22Mir%20hale%20Pool%22%20Verscheid" className="btn-social btn-outline"><i className="fa fa-fw fa-envelope"></i></a>
+                  <a href="mailto:info@mir-hale-pool.de?Subject=Frage%20an%20die%20KG%20%22Mir%20hale%20Pool%22%20Verscheid" className="btn-social btn-outline"><i className="fa fa-fw fa-envelope"></i></a>
                 </li>
               </ul>
             </div>
@@ -50,7 +50,7 @@ class Footer extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12">
-              Copyright &copy; KG &quot;Mir hale Pool&quot; Verscheid ( 2018 )
+              Copyright &copy; KG &quot;Mir hale Pool&quot; Verscheid ( 2019 )
             </div>
           </div>
         </div>
@@ -59,18 +59,7 @@ class Footer extends React.Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return state;
-// };
-
 Footer.propTypes = {
-  // mapView: PropTypes.object,
-  // appLanguage: PropTypes.string,
-  // feature: PropTypes.object,
-  // featureInfoActive: PropTypes.bool,
-  // mapLayers: PropTypes.array,
-  // muiTheme: PropTypes.object
 };
 
-//export default App;
-export default Footer; //connect(mapStateToProps,undefined)(App);
+export default Footer;
