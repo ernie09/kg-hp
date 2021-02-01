@@ -1,32 +1,63 @@
-var devConfig = require('./webpack.config.js');
+const commonConfig = require('./webpack.common.config.js');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-var CompressionPlugin = require('compression-webpack-plugin');
+const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 
-var prodConfig = Object.assign({}, devConfig);
+let commonWebpackConfig = commonConfig.commonWebpackConfig;
 
-prodConfig.mode = 'production';
-prodConfig.optimization = {
-  minimize: true
+// prepare the InterpolateHtmlPlugin
+const interpolations = {
+  'NODE_ENV': 'production',
+  'PUBLIC_URL': ''
 };
 
-prodConfig.plugins.push(
+commonWebpackConfig.plugins = [
+  ...commonWebpackConfig.plugins || [],
   new webpack.DefinePlugin({
     'process.env': {
-      'NODE_ENV': JSON.stringify('production')
+      NODE_ENV: JSON.stringify('production')
     }
   }),
-  new CopyWebpackPlugin([{
-    from: 'app/index.html'
-  }]),
-  new webpack.optimize.AggressiveMergingPlugin(),
-  new CompressionPlugin({
-    asset: '[path].gz[query]',
-    algorithm: 'gzip',
-    test: /\.js$|\.css$|\.html$/,
-    threshold: 10240,
-    minRatio: 0.8
-  })
-);
+  new CopyWebpackPlugin([
+    // Note: This can be removed as soon as the SHOGun2 interface is being called.
+    {
+      from: './src/resources/appContext.json',
+      to: './resources/'
+    }, {
+      from: './src/resources/i18n/',
+      to: './resources/i18n/'
+    }, {
+      from: './src/resources/logos/',
+      to: './resources/logos/'
+    }, {
+      from: './src/resources/img/',
+      to: './resources/img/'
+    }
+  ]),
+  new HtmlWebpackPlugin({
+    title: 'progemis client',
+    filename: 'index.html',
+    favicon: './public/favicon.ico',
+    template: './public/index.html',
+    files: {
+      css: []
+    },
+    headers: {
+      csrfToken: '${_csrf.token}',
+      csrfHeader: '${_csrf.headerName}',
+      csrfParameterName: '${_csrf.parameterName}'
+    },
+    hash: true,
+    minify: {
+      removeComments: true,
+      collapseWhitespace: true
+    }
+  }),
+  new webpack.ProgressPlugin({ profile: false }),
+  new InterpolateHtmlPlugin(interpolations)
+];
 
-module.exports = prodConfig;
+commonWebpackConfig.mode = 'production';
+
+module.exports = commonWebpackConfig;

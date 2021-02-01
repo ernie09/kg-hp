@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": [
+      "ES2020",
+      "dom"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false, //temporal
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "rootDir": "app",
+    "skipLibCheck": true, // TODO: REMOVE when duplicated packages issue is solved
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5",
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "browser",
+    "config",
+    "dist",
+    "scripts",
+    "coverage",
+    "acceptance-tests",
+    "webpack",
+    "coverage",
+    "app/jest/**",
+    "**.config.js"
+  ]
+}
