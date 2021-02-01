@@ -135,7 +135,7 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
       className="prinzen-img"
       src={imgSrc}
     />;
-  }
+  };
 
   createText = (t: Tollitaeten) => {
     const {
@@ -147,17 +147,17 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
     const bauerElem = bauer ? <div>
       Bauer {bauer.givenname} {'(' + bauer.surname + ')'
       } {bauer.romanNumber}.{bauer.title}</div>
-    : '';
+      : '';
 
     let ts = <p>Prinz {prinz.givenname} {'(' + prinz.surname + ')'} {prinz.romanNumber}. {prinz.title},<br />
       Prinzessin {prinzessin.givenname} {'(' + prinzessin.surname + ')'} {prinzessin.romanNumber}. {prinzessin.title}
       {
         bauerElem
       }
-      </p>
+    </p>;
 
     return ts;
-  }
+  };
 
   createCarouselItem = (t: Tollitaeten, junior: boolean) => {
     const itm = <Carousel.Item key={!junior ? `Prinzenpaar ${t.year}` : `Kinderprinzenpaar ${t.year}`}>
@@ -176,21 +176,21 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
       </Carousel.Caption>
     </Carousel.Item>;
     return itm;
-  }
+  };
 
   handleSeniorChange = (value?: any, e?: any) => {
     this.setState({
       seniorActiveYear: e.direction ? value + 1949 : value,
       seniorDirection: e ? e.direction : this.state.seniorDirection
     });
-  }
+  };
 
   handleJuniorChange = (value?: any, e?: any) => {
     this.setState({
       juniorActiveYear: e.direction ? value + 1978 : value,
       juniorDirection: e ? e.direction : this.state.juniorDirection
     });
-  }
+  };
 
   /**
    *

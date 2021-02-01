@@ -1,43 +1,26 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Header from './Header';
 
-interface KleineFunkenProps {}
+type KleineFunkenProps = {};
 
 /**
  *
  */
-class KleineFunken extends Component<KleineFunkenProps> {
-
-  /**
-  *
-  */
-  constructor(props: KleineFunkenProps) {
-    super(props);
-
-    this.state = {};
-  }
-
-  /**
-  *
-  */
-  render() {
-    return (
-      <div>
-        <Header titleText={'Kleine Funken'} />
-        <section id="group">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                {/* <img src={kleineFunken} className="img-responsive" alt="Die kleinen Funken mit Betreuerinnen"/>
+const KleineFunken: React.FC<KleineFunkenProps> = () => {
+  return <div>
+    <Header titleText={'Kleine Funken'} />
+    <section id="group">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            {/* <img src={kleineFunken} className="img-responsive" alt="Die kleinen Funken mit Betreuerinnen"/>
                 <h3><b>Trainerin: </b>Tina Faust</h3><br/>
                 <h3><b>Betreuerin: </b>Lena Br&uuml;digam</h3><br/> */}
-              </div>
-            </div>
           </div>
-        </section>
+        </div>
       </div>
-    );
-  }
-}
+    </section>
+  </div>;
+};
 
 export default KleineFunken;

@@ -1,47 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-interface LandingPageNewsProps {}
+type LandingPageNewsProps = {};
 
-/**
- *
- */
-class LandingPageNews extends Component<LandingPageNewsProps> {
-
-  /**
-   *
-   * @param props
-   */
-  constructor(props: LandingPageNewsProps) {
-    super(props);
-  }
-
-  /**
-   *
-   */
-  render() {
-    return (
-      <section id="events">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <h1 className="title-landingpagenews">
-                <strong>
-                  <i className="fa fa-bolt" aria-hidden="true"></i> Brandaktuell - Bitte vormerken <i className="fa fa-bolt" aria-hidden="true"></i>
-                </strong>
-              </h1>
-              <div className="bs-callout bs-callout-default">
-                <h3>Kartenvorverkauf für Kappensitzung und Ü60-Sitzung</h3>
-                <p>Am kommenden Samstag (16.12.2018, 14:30) ist der Vorverkauf für unsere Kappensitzung sowie unsere Ü60-Sitzung.
-                  <br /><Link to="/news" className="read-more">Die Plakate finden Sie hier</Link>
-                </p>
-              </div>
-            </div>
+const LandingPageNews: React.FC<LandingPageNewsProps> = () => {
+  return <section id="events">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12">
+          <h1 className="title-landingpagenews">
+            <strong>
+              <i
+                className="fa fa-bolt"
+                aria-hidden="true" /> Brandaktuell - Bitte vormerken
+              <i className="fa fa-bolt" aria-hidden="true"></i>
+            </strong>
+          </h1>
+          <div className="bs-callout bs-callout-default">
+            <h3>Kartenvorverkauf für Kappensitzung und Ü60-Sitzung</h3>
+            <p>Am kommenden Samstag (16.12.2018, 14:30) ist der Vorverkauf für unsere Kappensitzung
+              sowie unsere Ü60-Sitzung.
+            <br /><Link to="/news" className="read-more">Die Plakate finden Sie hier</Link>
+            </p>
           </div>
         </div>
-      </section>
-    );
-  }
-}
+      </div>
+    </div>
+  </section>;
+};
 
 export default LandingPageNews;

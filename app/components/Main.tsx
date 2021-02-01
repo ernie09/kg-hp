@@ -62,7 +62,7 @@ class Main extends Component<MainProps, MainState> {
           this.state.printNews ? <LandingPageNews /> : null
         }
         <Carousel indicators={false} interval={10000}>
-          {/*<Carousel.Item>
+          {/* <Carousel.Item>
             <img className="img-responsive carousel-image" src={weihnachtskarte} />
           </Carousel.Item>*/}
           <Carousel.Item>
