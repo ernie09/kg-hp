@@ -1,14 +1,9 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 
-import { Carousel, Panel } from 'react-bootstrap';
-import Slider from 'react-rangeslider';
+// import prinzenpaare from '../resources/prinzenpaare';
+// import kinderprinzenpaare from '../resources/kinderprinzenpaare';
 
-import prinzenpaare from '../resources/prinzenpaare';
-import kinderprinzenpaare from '../resources/kinderprinzenpaare';
-
-import mapNumericalToRoman from '../util/utils';
-
-import Header from './Header';
+import PageHeader from './PageHeader';
 
 interface Tollitaet {
   givenname: string;
@@ -26,110 +21,96 @@ interface Tollitaeten {
   year: number;
 }
 
-interface PrinzenpaareProps {}
-interface PrinzenpaareState {
-  senior: Tollitaeten[];
-  junior: Tollitaeten[];
-  seniorActiveYear: number;
-  juniorActiveYear: number;
-  seniorDirection: string;
-  juniorDirection: string;
-}
+type PrinzenpaareProps = {};
 
-/**
- *
- */
-class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
+const Prinzenpaare: React.FC<PrinzenpaareProps> = () => {
 
-  /**
-   *
-   * @param {*} props
-   */
-  constructor(props: PrinzenpaareProps) {
-    super(props);
+  // /**
+  //  *
+  //  * @param {*} props
+  //  */
+  // constructor(props: PrinzenpaareProps) {
+  //   super(props);
 
-    const senior = Object.keys(prinzenpaare).map((yearString: string) => {
-      const obj: any = prinzenpaare[yearString];
+  //   const senior = Object.keys(prinzenpaare).map((yearString: string) => {
+  //     const obj: any = prinzenpaare[yearString];
 
-      const prinz: Tollitaet = {
-        givenname: obj.nameMan,
-        surname: obj.name,
-        romanNumber: mapNumericalToRoman(obj.numMan),
-        title: obj.titleMan
-      };
-      const prinzessin: Tollitaet = {
-        givenname: obj.woman,
-        surname: obj.nameWoman || obj.name,
-        romanNumber: mapNumericalToRoman(obj.numWoman),
-        title: obj.titleWoman
-      };
-      const isDreigestirn: boolean = !!obj.isDreiGestirn;
+  //     const prinz: Tollitaet = {
+  //       givenname: obj.nameMan,
+  //       surname: obj.name,
+  //       romanNumber: mapNumericalToRoman(obj.numMan),
+  //       title: obj.titleMan
+  //     };
+  //     const prinzessin: Tollitaet = {
+  //       givenname: obj.woman,
+  //       surname: obj.nameWoman || obj.name,
+  //       romanNumber: mapNumericalToRoman(obj.numWoman),
+  //       title: obj.titleWoman
+  //     };
+  //     const isDreigestirn: boolean = !!obj.isDreiGestirn;
 
-      const bauer: Tollitaet = isDreigestirn ? {
-        givenname: obj.bauerGivenName,
-        surname: obj.bauerSurName,
-        romanNumber: mapNumericalToRoman(obj.numBauer),
-        title: obj.titleBauer
-      } : null;
-      const imageSrc: string = obj.picture;
-      const t: Tollitaeten = {
-        year: parseInt(yearString),
-        isDreigestirn,
-        imageSrc,
-        prinz,
-        prinzessin,
-        bauer
-      };
-      return t;
-    });
+  //     const bauer: Tollitaet = isDreigestirn ? {
+  //       givenname: obj.bauerGivenName,
+  //       surname: obj.bauerSurName,
+  //       romanNumber: mapNumericalToRoman(obj.numBauer),
+  //       title: obj.titleBauer
+  //     } : null;
+  //     const imageSrc: string = obj.picture;
+  //     const t: Tollitaeten = {
+  //       year: parseInt(yearString),
+  //       isDreigestirn,
+  //       imageSrc,
+  //       prinz,
+  //       prinzessin,
+  //       bauer
+  //     };
+  //     return t;
+  //   });
 
-    const junior = Object.keys(kinderprinzenpaare).map((yearString: string) => {
-      const obj: any = kinderprinzenpaare[yearString];
 
-      const prinz: Tollitaet = {
-        givenname: obj.nameMan,
-        surname: obj.name,
-        romanNumber: mapNumericalToRoman(obj.numMan),
-        title: obj.titleMan
-      };
-      const prinzessin: Tollitaet = {
-        givenname: obj.woman,
-        surname: obj.nameWoman || obj.name,
-        romanNumber: mapNumericalToRoman(obj.numWoman),
-        title: obj.titleWoman
-      };
-      const isDreigestirn: boolean = !!obj.isDreiGestirn;
+  const [senior, setSenior] = useState<Tollitaeten[]>();
+  const [junior, setJunior] = useState<Tollitaeten[]>();
+  const [seniorActiveYear, setSeniorActiveYear] = useState<number>();
+  const [juniorActiveYear, setJuniorActiveYear] = useState<number>();
+  const [seniorDirection, setSeniorDirection] = useState<string>();
+  const [juniorDirection, setJuniorDirection] = useState<string>();
 
-      const bauer: Tollitaet = isDreigestirn ? {
-        givenname: obj.bauerGivenName,
-        surname: obj.bauerSurName,
-        romanNumber: mapNumericalToRoman(obj.numBauer),
-        title: obj.titleBauer
-      } : null;
-      const imageSrc: string = obj.picture;
-      const t: Tollitaeten = {
-        year: parseInt(yearString),
-        isDreigestirn,
-        imageSrc,
-        prinz,
-        prinzessin,
-        bauer
-      };
-      return t;
-    });
+  // const junior = Object.keys(kinderprinzenpaare).map((yearString: string) => {
+  //   const obj: any = kinderprinzenpaare[yearString];
 
-    this.state = {
-      senior,
-      junior,
-      seniorActiveYear: 2020,
-      seniorDirection: null,
-      juniorActiveYear: 2020,
-      juniorDirection: null
-    };
+  //   const prinz: Tollitaet = {
+  //     givenname: obj.nameMan,
+  //     surname: obj.name,
+  //     romanNumber: mapNumericalToRoman(obj.numMan),
+  //     title: obj.titleMan
+  //   };
+  //   const prinzessin: Tollitaet = {
+  //     givenname: obj.woman,
+  //     surname: obj.nameWoman || obj.name,
+  //     romanNumber: mapNumericalToRoman(obj.numWoman),
+  //     title: obj.titleWoman
+  //   };
+  //   const isDreigestirn: boolean = !!obj.isDreiGestirn;
 
-  }
+  //   const bauer: Tollitaet = isDreigestirn ? {
+  //     givenname: obj.bauerGivenName,
+  //     surname: obj.bauerSurName,
+  //     romanNumber: mapNumericalToRoman(obj.numBauer),
+  //     title: obj.titleBauer
+  //   } : null;
+  //   const imageSrc: string = obj.picture;
+  //   const t: Tollitaeten = {
+  //     year: parseInt(yearString),
+  //     isDreigestirn,
+  //     imageSrc,
+  //     prinz,
+  //     prinzessin,
+  //     bauer
+  //   };
+  //   return t;
+  // });
 
-  createImage = (imageUrl: string) => {
+  const createImage = (imageUrl: string) => {
     const imgSrc = imageUrl || 'https://via.placeholder.com/500x500';
     return <img
       className="prinzen-img"
@@ -137,7 +118,7 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
     />;
   };
 
-  createText = (t: Tollitaeten) => {
+  const createText = (t: Tollitaeten) => {
     const {
       prinz,
       prinzessin,
@@ -159,90 +140,72 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
     return ts;
   };
 
-  createCarouselItem = (t: Tollitaeten, junior: boolean) => {
-    const itm = <Carousel.Item key={!junior ? `Prinzenpaar ${t.year}` : `Kinderprinzenpaar ${t.year}`}>
-      {this.createImage(t.imageSrc) }
-      <Carousel.Caption>
-        <Panel bsStyle="danger">
-          <Panel.Heading>
-            <Panel.Title componentClass="h3">{!junior ? `Prinzenpaar ${t.year}` : `Kinderprinzenpaar ${t.year}`}</Panel.Title>
-          </Panel.Heading>
-          <Panel.Body>
-            {
-              this.createText(t)
-            }
-          </Panel.Body>
-        </Panel>
-      </Carousel.Caption>
-    </Carousel.Item>;
-    return itm;
+  const createCarouselItem = (t: Tollitaeten, junior: boolean) => {
+    // const itm = <Carousel.Item key={!junior ? `Prinzenpaar ${t.year}` : `Kinderprinzenpaar ${t.year}`}>
+    //   {this.createImage(t.imageSrc) }
+    //   <Carousel.Caption>
+    //     <Panel bsStyle="danger">
+    //       <Panel.Heading>
+    //         <Panel.Title componentClass="h3">{!junior ? `Prinzenpaar ${t.year}` :
+    // `Kinderprinzenpaar ${t.year}`}</Panel.Title>
+    //       </Panel.Heading>
+    //       <Panel.Body>
+    //         {
+    //           this.createText(t)
+    //         }
+    //       </Panel.Body>
+    //     </Panel>
+    //   </Carousel.Caption>
+    // </Carousel.Item>;
+    return <></>;
   };
 
-  handleSeniorChange = (value?: any, e?: any) => {
-    this.setState({
-      seniorActiveYear: e.direction ? value + 1949 : value,
-      seniorDirection: e ? e.direction : this.state.seniorDirection
-    });
+  const handleSeniorChange = (value?: any, e?: any) => {
+    setSeniorActiveYear(e.direction ? value + 1949 : value);
+    setSeniorDirection(e ? e.direction : seniorDirection);
   };
 
-  handleJuniorChange = (value?: any, e?: any) => {
-    this.setState({
-      juniorActiveYear: e.direction ? value + 1978 : value,
-      juniorDirection: e ? e.direction : this.state.juniorDirection
-    });
+  const handleJuniorChange = (value?: any, e?: any) => {
+    setJuniorActiveYear(e.direction ? value + 1978 : value);
+    setJuniorDirection(e ? e.direction : juniorDirection);
   };
 
-  /**
-   *
-   */
-  render() {
-    const {
-      senior,
-      junior,
-      seniorActiveYear,
-      seniorDirection,
-      juniorActiveYear,
-      juniorDirection
-    } = this.state;
+  if (!senior && !junior) {
+    return <></>;
+  }
 
-    if (!senior && !junior) {
-      return <div />;
-    }
+  if (!senior || (senior && senior.length === 0)) {
+    return <></>;
+  }
 
-    if (!senior || (senior && senior.length === 0)) {
-      return <div />;
-    }
+  if (!junior || (junior && junior.length === 0)) {
+    return <></>;
+  }
 
-    if (!junior || (junior && junior.length === 0)) {
-      return <div />;
-    }
+  let seniorItems = [];
+  // for (let ppYear in senior) {
+  //   let ppItem = senior[ppYear];
+  //   seniorItems.push(
+  //     createCarouselItem(ppItem, false)
+  //   );
+  // }
 
-    let seniorItems = [];
-    for (let ppYear in senior) {
-      let ppItem = senior[ppYear];
-      seniorItems.push(
-        this.createCarouselItem(ppItem, false)
-      );
-    }
+  let juniorItems = [];
+  // for (let kppYear in junior) {
+  // let kppItem = junior[kppYear];
+  // juniorItems.push(
+  // createCarouselItem(kppItem, true)
+  // );
+  // }
 
-    let juniorItems = [];
-    for (let kppYear in junior) {
-      let kppItem = junior[kppYear];
-      juniorItems.push(
-        this.createCarouselItem(kppItem, true)
-      );
-    }
-
-    return (
-      <div>
-        <Header titleText={'Prinzengallerie'}>
-          <span className="fkg fkg-narrenkappe" style={{
-            fontSize: '3em'
-          }}></span>
-        </Header>
-        <section id="senior">
-          <h1><b>Prinzenpaare der KG</b></h1>
-          <Carousel
+  return (
+    <>
+      <PageHeader
+        title="Prinzengallerie"
+      />
+      <section id="senior">
+        <h1><b>Prinzenpaare der KG</b></h1>
+        {/* <Carousel
             indicators={false}
             interval={null}
             activeIndex={seniorActiveYear - 1949}
@@ -256,16 +219,16 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
             max={2017}
             value={this.state.seniorActiveYear}
             onChange={this.handleSeniorChange}
-          />
-        </section>
-        <hr style={{
-          width: '90%',
-          border: '1px solid #aaa',
-          borderRadius: 9
-        }} />
-        <section id="junior">
-          <h1><b>Kinderprinzenpaare der KG</b></h1>
-          <Carousel
+          /> */}
+      </section>
+      <hr style={{
+        width: '90%',
+        border: '1px solid #aaa',
+        borderRadius: 9
+      }} />
+      <section id="junior">
+        <h1><b>Kinderprinzenpaare der KG</b></h1>
+        {/* <Carousel
             indicators={false}
             interval={null}
             activeIndex={juniorActiveYear - 1978}
@@ -279,11 +242,10 @@ class Prinzenpaare extends Component<PrinzenpaareProps, PrinzenpaareState> {
             max={2017}
             value={juniorActiveYear}
             onChange={this.handleJuniorChange}
-          />
-        </section>
-      </div>
-    );
-  }
-}
+          /> */}
+      </section>
+    </>
+  );
+};
 
 export default Prinzenpaare;

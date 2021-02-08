@@ -1,21 +1,21 @@
 import React from 'react';
-import Header from './Header';
-
-import {Grid, Row, Col, Thumbnail} from 'react-bootstrap';
 
 import paganetti from '../img/sponsoren/logopaganetti1.gif';
 import elektroSiebenmorgen from '../img/sponsoren/elektroSiebenmorgen.png';
 import immoNeumann from '../img/sponsoren/neumann_immobilien_siebenmorgen_logo.jpg';
 import logoRheinChemo from '../img/sponsoren/Logo_RC_GmbH.png';
+import PageHeader from './PageHeader';
 
 /**
  *
  */
 const Sponsoren: React.FC = () => {
   return <>
-    <Header titleText={'Sponsoren'} />
+    <PageHeader
+      title="Sponsoren"
+    />
     <br />
-    <Grid>
+    {/* <Grid>
       <Row>
         <Col xs={6} md={3}>
           <Thumbnail href="http://www.paganettis.de/" target="_blank" src={paganetti}>
@@ -39,7 +39,7 @@ const Sponsoren: React.FC = () => {
           </Thumbnail>
         </Col>
       </Row>
-    </Grid>
+    </Grid> */}
   </>;
 };
 

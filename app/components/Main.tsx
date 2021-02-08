@@ -1,106 +1,61 @@
-import React, {Component} from 'react';
-import MediaQuery from 'react-responsive';
-import { Carousel, Panel } from 'react-bootstrap';
-
-import Header from './Header';
+import React from 'react';
 import LandingPageNews from './LandingPageNews';
+
 
 import pp2020 from '../img/prinzenpaare/Prinzenpaar2020.png';
 import kinderprinzessin2020 from '../img/prinzenpaare/Kinderprinzenpaar2020.png';
 
-interface MainProps { }
-interface MainState {
-  printNews: boolean;
-}
+import PageHeader from './PageHeader';
+import { Container } from 'semantic-ui-react';
+import AliceCarousel from 'react-alice-carousel';
+import PrinzenImage from './PrinzenImage';
 
-/**
- *
- */
-class Main extends Component<MainProps, MainState> {
+const Main: React.FC = () => {
+  const printNews = false;
 
-  /**
-   *
-   */
-  constructor(props: MainProps) {
-    super(props);
+  const ppDescription = <Container text>
+    <strong>Prinz Thomas II.</strong>, von den alten Herren bekannt, fliegt er mit Schrauben durchs ganze Land,<br />
+    <strong>Prinzessin Bea I.</strong>, Jungfunkenmutter und im M&ouml;hnenverein,
+      war es ihr Traum einmal Prinzessin zu sein
+  </Container>;
 
-    this.state = {
-      printNews: false
-    };
-  }
+  const kppDescription = <Container text>
+    <strong>Prinzessin Julia II.</strong>, liebt Pferde und fetzigen Tanz, mag es kunterbunt mit viel Glanz.
+  </Container>;
 
-  /**
-   *
-   */
-  render() {
-    const captionPanel =
-      <Panel bsStyle="danger">
-        <Panel.Heading>
-          <Panel.Title componentClass="h3">Unser Prinzenpaar</Panel.Title>
-        </Panel.Heading>
-        <Panel.Body>
-          <strong>Prinz Thomas II.</strong>, von den alten Herren bekannt, fliegt er mit Schrauben durchs ganze Land,<br />
-          <strong>Prinzessin Bea I.</strong>, Jungfunkenmutter und im M&ouml;hnenverein, war es ihr Traum einmal Prinzessin zu sein
-        </Panel.Body>
-      </Panel>;
+  const handleDragStart = (e: Event) => e.preventDefault();
 
-    const captionPanelKp =
-      <Panel bsStyle="danger">
-        <Panel.Heading>
-          <Panel.Title componentClass="h3">Unsere Kinderprinzessin</Panel.Title>
-        </Panel.Heading>
-        <Panel.Body>
-          <strong>Prinzessin Julia II.</strong>, liebt Pferde und fetzigen Tanz, mag es kunterbunt mit viel Glanz.
-        </Panel.Body>
-      </Panel>;
-    return (
-      <div>
-        <Header titleText={'"Mir hale Pool" Verscheid'} skillsText="3x Hüh'Scheldche Alaaf!" hrClassName="star-light">
-          <p className="medium">Die Karnevalsgesellschaft &quot;Mir hale Pool&quot; Verscheid 1929 ist ein gemeinn&uuml;tziger Verein zur Pflege des Brauchtums Karneval auf H&uuml;h und Scheldche, Breitscheid und dem Elsbachtal.</p>
-        </Header>
-        {
-          this.state.printNews ? <LandingPageNews /> : null
+  const items = [
+    <PrinzenImage
+      src={pp2020}
+      handleDragStart={handleDragStart}
+      title="Unser Prinzenpaar"
+      description={ppDescription}
+    />,
+    <PrinzenImage
+      src={kinderprinzessin2020}
+      title="Unsere Kinderprinzessin"
+      handleDragStart={handleDragStart}
+      description={kppDescription}
+    />
+  ];
+
+  return (
+    <>
+      <PageHeader
+        title={'KG "Mir hale Pool" Verscheid'}
+        subtitle={'3x Hüh\'Scheldche Alaaf!'}
+        content={
+          'Die Karnevalsgesellschaft "Mir hale Pool" Verscheid 1929 ist ein gemeinnütziger Verein ' +
+        'zur Pflege des Brauchtums Karneval auf Hüh und Scheldche, Breitscheid und dem Elsbachtal.'
         }
-        <Carousel indicators={false} interval={10000}>
-          {/* <Carousel.Item>
-            <img className="img-responsive carousel-image" src={weihnachtskarte} />
-          </Carousel.Item>*/}
-          <Carousel.Item>
-            <img className="img-responsive carousel-image" src={pp2020} />
-            <MediaQuery query="(min-device-width: 1224px)">
-              <Carousel.Caption>
-                {captionPanel}
-              </Carousel.Caption>
-            </MediaQuery>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="img-responsive carousel-image" src={kinderprinzessin2020} />
-            <MediaQuery query="(min-device-width: 1224px)">
-              <Carousel.Caption>
-                {captionPanelKp}
-              </Carousel.Caption>
-            </MediaQuery>
-          </Carousel.Item>
-          {/* <Carousel.Item>
-            <img className="img-responsive carousel-image" src={gemeinsam2019} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="img-responsive carousel-image" src={jubiPP2} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="img-responsive carousel-image" src={kinderPP2} />
-          </Carousel.Item> */}
-        </Carousel>
-        <br></br>
-        <MediaQuery query="(max-device-width: 1224px)">
-          {captionPanel}
-        </MediaQuery>
-        <MediaQuery query="(max-device-width: 1224px)">
-          {captionPanelKp}
-        </MediaQuery>
-      </div>
-    );
-  }
-}
+      />
+      {
+        printNews && <LandingPageNews />
+      }
+      <AliceCarousel mouseTracking items={items} />
+    </>
+  );
+};
 
 export default Main;

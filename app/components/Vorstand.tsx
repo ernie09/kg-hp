@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './Header';
 
 import vorstandPlaceholder from '../img/vorstand/1.png';
 import af from '../img/vorstand/af.JPG';
 import ae from '../img/vorstand/ae.JPG';
 import omr from '../img/vorstand/omr.JPG';
 import ms from '../img/vorstand/ms.JPG';
+import PageHeader from './PageHeader';
 
 type VorstandProps = {};
 
@@ -13,8 +13,10 @@ type VorstandProps = {};
  *
  */
 const Vorstand: React.FC<VorstandProps> = () => {
-  return <div>
-    <Header titleText={'Vorstand'} />
+  return <>
+    <PageHeader
+      title="Vorstand"
+    />
     <section id="vorstand">
       <div className="container">
         <div className="row">
@@ -65,7 +67,7 @@ const Vorstand: React.FC<VorstandProps> = () => {
         </div>
       </div>
     </section>
-  </div>;
+  </>;
 };
 
 export default Vorstand;

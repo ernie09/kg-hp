@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import { Table } from 'react-bootstrap';
+import PageHeader from './PageHeader';
 
 type TermineProps = {};
 
@@ -9,16 +8,12 @@ type TermineProps = {};
  */
 const Termine: React.FC<TermineProps> = () => {
 
-  return <div>
-    <Header titleText={'Termine'} hrClassName="calendar-light">
-      <p className="text-center large">Session 2021</p>
-    </Header>
-    <section id="events2019">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div id="no-more-tables">
-              <Table striped bordered hover>
+  return <>
+    <PageHeader
+      title="Termine"
+      subtitle="Session 2021"
+    />
+    {/* <Table striped bordered hover>
                 <thead className="cf">
                   <tr>
                     <th>Tag</th>
@@ -39,13 +34,8 @@ const Termine: React.FC<TermineProps> = () => {
                     </td>
                   </tr>
                 </tbody>
-              </Table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>;
+              </Table> */}
+  </>;
 };
 
 export default Termine;

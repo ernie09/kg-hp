@@ -1,18 +1,19 @@
 import React from 'react';
-import Header from './Header';
 
 import hist1945 from '../img/historie/1945.png';
 import hist1966 from '../img/historie/1966.png';
 import hist1968 from '../img/historie/1968.png';
 import hist1978 from '../img/historie/1978.png';
+import PageHeader from './PageHeader';
 
 type HistorieProps = {};
 
 const Historie: React.FC<HistorieProps> = () => {
-  return <div>
-    <Header titleText={'Historie'} hrClassName="clock-light">
-      <h2 className="text-center">Bal 90 Johr jeck....die Hüh is nit jenoch!</h2><br />
-    </Header>
+  return <>
+    <PageHeader
+      title="Historie"
+      subtitle="Bal 90 Johr jeck....die Hüh is nit jenoch!"
+    />
     <section id="events">
       <div className="container">
         <div className="row">
@@ -110,7 +111,7 @@ const Historie: React.FC<HistorieProps> = () => {
         </div>
       </div>
     </section>
-  </div>;
+  </>;
 };
 
 export default Historie;
