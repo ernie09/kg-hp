@@ -13,7 +13,9 @@ const PrinzenImage: React.FC<PrinzenImageProps> = ({
   description,
   ...passThroughProps
 }) => {
-  return <Card>
+  return <Card
+    className="prinzen-image"
+  >
     <Image {...passThroughProps} />
     <Card.Content>
       <Card.Header>{title}</Card.Header>

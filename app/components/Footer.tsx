@@ -7,42 +7,34 @@ type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = () => {
 
-  return <Container>
-    <Grid divided inverted stackable>
-      <Grid.Row>
-        <Grid.Column width={3}>
-          <Header inverted as='h3' content='Facebook' />
-          <ul className="list-inline">
-            <li>
-              <a
-                href="https://www.facebook.com/MirHalePool/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
-            </li>
-          </ul>
-        </Grid.Column>
-        <Grid.Column width={3}>
-          <Header inverted as='h3' content='Email' />
-          <ul className="list-inline">
-            <li>
-              <a href="mailto:info@mir-hale-pool.de?Subject=Frage%20an%20die%20KG%20%22Mir%20hale%20Pool%22%20Verscheid" className="btn-social btn-outline"><i className="fa fa-fw fa-envelope"></i></a>
-            </li>
-          </ul>
-        </Grid.Column>
-        <Grid.Column width={4}>
-          <Header inverted as='h3' content='Impressum' />
-          <ul className="list-inline">
-            <li>
-              <Link
-                to="impressum"
-                className="btn-social btn-outline">
-                <i className="fa fa-fw fa-balance-scale"></i>
-              </Link>
-            </li>
-          </ul>
-        </Grid.Column>
-      </Grid.Row>
+  return <Container
+    className="footer"
+  >
+    <Grid divided inverted stackable columns={3}>
+      <Grid.Column>
+        <Header inverted as='h3' content='Facebook' />
+        <a
+          href="https://www.facebook.com/MirHalePool/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="circular big facebook icon"></i>
+        </a>
+      </Grid.Column>
+      <Grid.Column>
+        <Header inverted as='h3' content='Email' />
+        <a href="mailto:info@mir-hale-pool.de?Subject=Frage%20an%20die%20KG%20%22Mir%20hale%20Pool%22%20Verscheid">
+          <i className="circular big envelope outline icon"></i>
+        </a>
+      </Grid.Column>
+      <Grid.Column>
+        <Header inverted as='h3' content='Impressum' />
+        <Link
+          to="impressum"
+          className="btn-social btn-outline">
+          <i className="circular big balance scale icon"></i>
+        </Link>
+      </Grid.Column>
     </Grid>
     <p>
       Copyright &copy; KG &quot;Mir hale Pool&quot; Verscheid ( 2021 )

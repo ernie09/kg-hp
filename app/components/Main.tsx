@@ -1,7 +1,6 @@
 import React from 'react';
 import LandingPageNews from './LandingPageNews';
 
-
 import pp2020 from '../img/prinzenpaare/Prinzenpaar2020.png';
 import kinderprinzessin2020 from '../img/prinzenpaare/Kinderprinzenpaar2020.png';
 
@@ -53,7 +52,11 @@ const Main: React.FC = () => {
       {
         printNews && <LandingPageNews />
       }
-      <AliceCarousel mouseTracking items={items} />
+      <AliceCarousel
+        mouseTracking
+        items={items}
+        autoHeight
+      />
     </>
   );
 };

@@ -16,7 +16,10 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 
   const { isMobile } = useContext(MobileContext);
 
-  return <Container text>
+  return <Container
+    text
+    className="page-header"
+  >
     <Header
       as='h1'
       content={title}

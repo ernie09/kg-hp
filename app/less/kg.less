@@ -1,6 +1,82 @@
 @import "variables.less";
 @import "fonts/kg-font.less";
 
+.kg-homepage {
+  height: 100%;
+  width: 100%;
+}
+
 .ui.container, .header {
   width: 100%;
+}
+
+.fkg-narrenkappe {
+  color: @theme-secondary !important;
+}
+
+.page-header {
+  color: @theme-secondary !important;
+
+  h1 {
+    font-weight: bold !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+
+  .ui.header {
+    color: @theme-secondary !important;
+  }
+}
+
+.ui.text.container {
+  max-width: 90% !important;
+  text-align: center;
+}
+
+.alice-carousel {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+    background-color: @theme-primary;
+  }
+  .alice-carousel__dots-item:not(.__custom) {
+    background-color: lighten(@theme-primary, 50%);
+  }
+
+  .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+    color: lighten(@theme-primary, 25%);
+  }
+
+  .ui.card {
+    margin: auto;
+  }
+
+  .prinzen-image{
+    width: 40%;
+    max-width: 750px;
+  }
+}
+
+.ui.huge.borderless.fluid.menu {
+  background-color: @theme-primary;
+  border-bottom: 1px solid white;
+
+  a{
+    color: white;
+  }
+}
+
+.footer {
+
+  padding-top: 2em;
+  margin-top: 2em;
+  border-top: 2px solid @theme-primary;
+
+  .column {
+    text-align: center;
+    .ui.inverted.header, i.icon {
+      color: @theme-secondary !important;
+    }
+  }
 }

@@ -8,8 +8,7 @@ type KgProps = {};
 const Kg: React.FC<KgProps> = () => {
   return <>
     <PageHeader
-      title="KG"
-      subtitle="Die roten Jacken"
+      title="Die roten Jacken"
     />
     <Image src={kg} />
   </>;
